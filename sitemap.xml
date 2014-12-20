@@ -18,31 +18,7 @@ http://benzap.github.iotags/cryogen.html
 </url>
 <url>
 <loc>
-http://benzap.github.iotags/very fetch.html
-</loc>
-<lastmod>
-2014-12-19
-</lastmod>
-</url>
-<url>
-<loc>
-http://benzap.github.iotags/not fetch.html
-</loc>
-<lastmod>
-2014-12-19
-</lastmod>
-</url>
-<url>
-<loc>
 http://benzap.github.ioindex.html
-</loc>
-<lastmod>
-2014-12-19
-</lastmod>
-</url>
-<url>
-<loc>
-http://benzap.github.ioposts/11-04-2014-second-post.html
 </loc>
 <lastmod>
 2014-12-19
@@ -58,7 +34,7 @@ http://benzap.github.ioposts/13-11-2014-docs.html
 </url>
 <url>
 <loc>
-http://benzap.github.ioposts/10-03-2014-first-post.html
+http://benzap.github.ioposts/13-11-2014-example-docs.html
 </loc>
 <lastmod>
 2014-12-19
@@ -74,7 +50,7 @@ http://benzap.github.io404.html
 </url>
 <url>
 <loc>
-http://benzap.github.iopages/another-page.html
+http://benzap.github.iopages/projects.html
 </loc>
 <lastmod>
 2014-12-19
