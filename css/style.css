@@ -38,12 +38,12 @@ p {
 }
 
 .header {
-  height: 30px;
+  height: 50px;
   background-color: #236daf;
   margin: 0;
   align-items: center;
   justify-content: center;
-  flex-basis: 30px;
+  flex-basis: 50px;
   flex-shrink: 0;
   flex-wrap: wrap;
 }
@@ -60,7 +60,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: 50px;
   margin: 0;
   flex-grow: 2;
 }
@@ -110,4 +110,118 @@ p {
   text-align: center;
   font-size: 80%;
   flex-shrink: 0;
+}
+
+.banner-page {
+  justify-content: flex-start;
+  height: 100%;
+  margin: 5%;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 26px 0px rgba(0,0,0,0.5);
+  background-color: #236daf;
+  border-radius: 5px;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+
+  .banner-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.profile-picture {
+  width: 33%;
+  flex-grow: 0;
+  padding: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.profile-picture>img {
+  border-radius: 100%;
+}
+
+@media (max-width: 600px) {
+
+  .profile-picture {
+    width: 75%;
+  }
+
+}
+
+.profile-content {
+  padding: 20px;
+  flex-grow: 3;
+}
+
+.detail-section {
+  display: flex;
+}
+
+@media (max-width: 350px) {
+
+  .detail-section {
+    flex-direction: column;
+  }
+
+}
+
+.detail-title {
+  font-weight: bold;
+  padding: 5px;
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+.detail-value {
+  padding: 5px;
+  flex-grow: 3;
+  flex-basis: 70%;
+  color: #ffa177;
+}
+
+.detail-value>a {
+  color: #c89800;
+}
+
+.detail-value>a:hover {
+  color: #ffca23;
+}
+
+.cooshy-quote {
+  margin: 7%;
+  margin-bottom: 3%;
+  text-align: center;
+  font-size: 120%;
+  color: #ffde77;
+}
+
+@media (max-width: 350px) {
+
+  .cooshy-quote {
+    font-size: 100%;
+  }
+
+}
+
+.banner-nav-sections {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 7%;
+  margin-top: 3%;
+}
+
+.banner-nav-element {
+  margin: 3%;
+  padding: 10px;
+  width: 200px;
+  background-color: #ffde77;
 }
