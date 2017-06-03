@@ -8,6 +8,7 @@
 
 html {
   height: 100%;
+  min-width: 300px;
 }
 
 body {
@@ -112,6 +113,14 @@ p {
   flex-shrink: 0;
 }
 
+@media (max-width: 450) {
+
+  .footer {
+    height: 50px;
+  }
+
+}
+
 .banner-page {
   justify-content: flex-start;
   height: 100%;
@@ -132,6 +141,16 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .banner-page {
+    margin: 0;
+    margin-bottom: 20px;
+    border-radius: 0;
   }
 
 }
@@ -165,7 +184,7 @@ p {
   display: flex;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 440px) {
 
   .detail-section {
     flex-direction: column;
@@ -175,6 +194,7 @@ p {
 
 .detail-title {
   font-weight: bold;
+  font-size: 1.3em;
   padding: 5px;
   flex-grow: 1;
   flex-basis: 30%;
@@ -182,31 +202,33 @@ p {
 
 .detail-value {
   padding: 5px;
+  font-size: 1.3em;
   flex-grow: 3;
   flex-basis: 70%;
   color: #ffa177;
 }
 
 .detail-value>a {
-  color: #c89800;
+  color: #ffde77;
+  text-decoration: none;
 }
 
 .detail-value>a:hover {
-  color: #ffca23;
+  color: #c89800;
 }
 
 .cooshy-quote {
   margin: 7%;
   margin-bottom: 3%;
   text-align: center;
-  font-size: 120%;
+  font-size: 1.5em;
   color: #ffde77;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 440px) {
 
   .cooshy-quote {
-    font-size: 100%;
+    font-size: 1.0em;
   }
 
 }
@@ -220,8 +242,35 @@ p {
 }
 
 .banner-nav-element {
-  margin: 3%;
-  padding: 10px;
   width: 200px;
+  border-width: 1px;
+  border-color: #ffa177;
+  margin: 3%;
+  padding: 15px;
+  border-style: solid;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em;
   background-color: #ffde77;
+  border-radius: 3px;
+}
+
+.banner-nav-element>a {
+  font-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-container {
+
+}
+
+@media (min-width: 860px) {
+
+  .home-container {
+    width: 860px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
