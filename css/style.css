@@ -26,6 +26,7 @@ h2 {
 
 p {
   padding: 14px;
+  font-size: 1.2em;
 }
 
 .full-width {
@@ -163,31 +164,48 @@ p {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+}
+
+@media (max-width: 550px) {
+
+  body {
+    overflow: auto;
+  }
+
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
-  background-color: #e2e5e7;
+  background-color: #6396c4;
   text-align: center;
   font-size: 80%;
+  flex-basis: 25px;
   flex-shrink: 0;
 }
 
 @media (max-width: 640px) {
 
   .footer {
-    height: 50px;
+    flex-basis: 50px;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .footer {
+    display: none;
   }
 
 }
 
 .banner-page {
   justify-content: flex-start;
-  height: 100%;
   margin: 5%;
   align-items: center;
   flex-direction: row;
@@ -317,6 +335,45 @@ p {
   font-size: 1.5em;
   background-color: #ffde77;
   border-radius: 3px;
+}
+
+.page-container {
+  background-color: #e2e5e7;
+  flex-grow: 1;
+  padding: 15px;
+  overflow: auto;
+}
+
+@media (max-width: 550px) {
+
+  .page-container {
+    padding: 0;
+    overflow: initial;
+  }
+
+}
+
+.page-view {
+  background-color: #fffdf9;
+  box-shadow: 3px 3px 26px 0px rgba(0,0,0,0.5);
+  padding: 5px;
+}
+
+@media (min-width: 860px) {
+
+  .page-view {
+    width: 860px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .page-container {
+    margin: 0;
+  }
+
 }
 
 .banner-nav-element>a {
