@@ -8,7 +8,7 @@ if(typeof website.core.app_state !== 'undefined'){
 website.core.app_state = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"current-page","current-page",-101294180),""], null));
 }
 website.core.greeting = rum.core.build_defc.call(null,(function (){
-var attrs42603 = new cljs.core.Keyword(null,"text","text",-1790561697).cljs$core$IFn$_invoke$arity$1(rum.core.react.call(null,website.core.app_state));
-return cljs.core.apply.call(null,React.createElement,"h1",((cljs.core.map_QMARK_.call(null,attrs42603))?sablono.interpreter.attributes.call(null,attrs42603):null),((cljs.core.map_QMARK_.call(null,attrs42603))?null:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs42603)], null)));
+var attrs42791 = new cljs.core.Keyword(null,"text","text",-1790561697).cljs$core$IFn$_invoke$arity$1(rum.core.react.call(null,website.core.app_state));
+return cljs.core.apply.call(null,React.createElement,"h1",((cljs.core.map_QMARK_.call(null,attrs42791))?sablono.interpreter.attributes.call(null,attrs42791):null),((cljs.core.map_QMARK_.call(null,attrs42791))?null:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs42791)], null)));
 }),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [rum.core.reactive], null),"greeting");
 rum.core.mount.call(null,website.core.greeting.call(null),document.getElementById("app"));

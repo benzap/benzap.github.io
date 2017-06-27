@@ -91,10 +91,10 @@ return cljs.core._reset_BANG_.call(null,this$__$1,cljs.core.apply.call(null,f,cl
 rum.cursor.Cursor.prototype.cljs$core$IWatchable$_add_watch$arity$3 = (function (this$,key,callback){
 var self__ = this;
 var this$__$1 = this;
-cljs.core.add_watch.call(null,self__.ref,(function (){var x__36326__auto__ = this$__$1;
-return cljs.core._conj.call(null,(function (){var x__36326__auto____$1 = key;
-return cljs.core._conj.call(null,cljs.core.List.EMPTY,x__36326__auto____$1);
-})(),x__36326__auto__);
+cljs.core.add_watch.call(null,self__.ref,(function (){var x__36514__auto__ = this$__$1;
+return cljs.core._conj.call(null,(function (){var x__36514__auto____$1 = key;
+return cljs.core._conj.call(null,cljs.core.List.EMPTY,x__36514__auto____$1);
+})(),x__36514__auto__);
 })(),((function (this$__$1){
 return (function (_,___$1,oldv,newv){
 var old = cljs.core.get_in.call(null,oldv,self__.path);
@@ -113,10 +113,10 @@ return this$__$1;
 rum.cursor.Cursor.prototype.cljs$core$IWatchable$_remove_watch$arity$2 = (function (this$,key){
 var self__ = this;
 var this$__$1 = this;
-cljs.core.remove_watch.call(null,self__.ref,(function (){var x__36326__auto__ = this$__$1;
-return cljs.core._conj.call(null,(function (){var x__36326__auto____$1 = key;
-return cljs.core._conj.call(null,cljs.core.List.EMPTY,x__36326__auto____$1);
-})(),x__36326__auto__);
+cljs.core.remove_watch.call(null,self__.ref,(function (){var x__36514__auto__ = this$__$1;
+return cljs.core._conj.call(null,(function (){var x__36514__auto____$1 = key;
+return cljs.core._conj.call(null,cljs.core.List.EMPTY,x__36514__auto____$1);
+})(),x__36514__auto__);
 })());
 
 return this$__$1;
@@ -136,8 +136,8 @@ rum.cursor.Cursor.cljs$lang$type = true;
 
 rum.cursor.Cursor.cljs$lang$ctorStr = "rum.cursor/Cursor";
 
-rum.cursor.Cursor.cljs$lang$ctorPrWriter = (function (this__36095__auto__,writer__36096__auto__,opt__36097__auto__){
-return cljs.core._write.call(null,writer__36096__auto__,"rum.cursor/Cursor");
+rum.cursor.Cursor.cljs$lang$ctorPrWriter = (function (this__36283__auto__,writer__36284__auto__,opt__36285__auto__){
+return cljs.core._write.call(null,writer__36284__auto__,"rum.cursor/Cursor");
 });
 
 rum.cursor.__GT_Cursor = (function rum$cursor$__GT_Cursor(ref,path,meta){
