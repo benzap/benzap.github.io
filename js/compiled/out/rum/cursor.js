@@ -91,7 +91,15 @@ return cljs.core._reset_BANG_.call(null,this$__$1,cljs.core.apply.call(null,f,cl
 rum.cursor.Cursor.prototype.cljs$core$IWatchable$_add_watch$arity$3 = (function (this$,key,callback){
 var self__ = this;
 var this$__$1 = this;
+<<<<<<< HEAD
 cljs.core.add_watch.call(null,self__.ref,(new cljs.core.List(null,this$__$1,(new cljs.core.List(null,key,null,(1),null)),(2),null)),((function (this$__$1){
+=======
+cljs.core.add_watch.call(null,self__.ref,(function (){var x__36514__auto__ = this$__$1;
+return cljs.core._conj.call(null,(function (){var x__36514__auto____$1 = key;
+return cljs.core._conj.call(null,cljs.core.List.EMPTY,x__36514__auto____$1);
+})(),x__36514__auto__);
+})(),((function (this$__$1){
+>>>>>>> 54b92db2afab0b3f8b43d3015ce0608ab4a589a2
 return (function (_,___$1,oldv,newv){
 var old = cljs.core.get_in.call(null,oldv,self__.path);
 var new$ = cljs.core.get_in.call(null,newv,self__.path);
@@ -109,7 +117,15 @@ return this$__$1;
 rum.cursor.Cursor.prototype.cljs$core$IWatchable$_remove_watch$arity$2 = (function (this$,key){
 var self__ = this;
 var this$__$1 = this;
+<<<<<<< HEAD
 cljs.core.remove_watch.call(null,self__.ref,(new cljs.core.List(null,this$__$1,(new cljs.core.List(null,key,null,(1),null)),(2),null)));
+=======
+cljs.core.remove_watch.call(null,self__.ref,(function (){var x__36514__auto__ = this$__$1;
+return cljs.core._conj.call(null,(function (){var x__36514__auto____$1 = key;
+return cljs.core._conj.call(null,cljs.core.List.EMPTY,x__36514__auto____$1);
+})(),x__36514__auto__);
+})());
+>>>>>>> 54b92db2afab0b3f8b43d3015ce0608ab4a589a2
 
 return this$__$1;
 });
@@ -128,8 +144,13 @@ rum.cursor.Cursor.cljs$lang$type = true;
 
 rum.cursor.Cursor.cljs$lang$ctorStr = "rum.cursor/Cursor";
 
+<<<<<<< HEAD
 rum.cursor.Cursor.cljs$lang$ctorPrWriter = (function (this__4160__auto__,writer__4161__auto__,opt__4162__auto__){
 return cljs.core._write.call(null,writer__4161__auto__,"rum.cursor/Cursor");
+=======
+rum.cursor.Cursor.cljs$lang$ctorPrWriter = (function (this__36283__auto__,writer__36284__auto__,opt__36285__auto__){
+return cljs.core._write.call(null,writer__36284__auto__,"rum.cursor/Cursor");
+>>>>>>> 54b92db2afab0b3f8b43d3015ce0608ab4a589a2
 });
 
 /**
