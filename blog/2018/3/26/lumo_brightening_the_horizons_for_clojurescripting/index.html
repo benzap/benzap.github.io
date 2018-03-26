@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp"><head><title>Benjamin Zaporzan - Lumo: Brightening the Horizons for Clojurescript'ing</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+           <link rel="manifest" href="/manifest.json">
+           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+           <meta name="theme-color" content="#ffffff"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"><link href="/css/highlight.css" rel="stylesheet" type="text/css"><link href="/css/style.css" rel="stylesheet" type="text/css"><script src="/js/highlight.js" type="text/javascript"></script><script>hljs.initHighlightingOnLoad();</script></head><body><div class="flex-container"><header class="header full-width"><div class="name"><img src="/media/profile.svg"></div><div class="menu"><div class="menu-item"><a href="/index.html">Home</a></div><div class="menu-item"><a href="/about.html">About Me</a></div><div class="menu-item"><a href="/blog/">Blog</a></div><div class="menu-item"><a href="/contact.html">Contact Me</a></div><div class="menu-item"><a href="/projects.html">Projects</a></div></div></header><div class="content"><div class="page-container"><div class="page-view"><h1 style="text-align: center;">Lumo: Brightening the Horizons for Clojurescript'ing</h1><div class="inline-markdown"><h2>Introduction</h2><p>Clojurescript'ing just got a lot easier.</p><p><strong>Lumo</strong> is a <b>standalone clojurescript compiler</b> developed by <i>António Nuno Monteiro</i>. It is built on top of the NodeJS ecosystem, and the first version of <strong>Lumo</strong> was introduced November 2016 with unanimous acclaim. This tool allows clojurescript to target backend development, especially in areas where clojure is lackluster.</p><p>In this blog post, I will be using <strong>Lumo</strong> for a specific use case, to write simple and re-useable commandline scripts. Get your hand-pistols ready, because you're in for a wild-ride!</p><p><img src="/media/clojurescript-clojurescript-everywhere.jpg" alt="Clojurescript Everywhere" /></p><h2>Lets Get Started (Prerequisites)</h2><p><strong>Lumo</strong> requires you to have a node development environment setup on your system. You can set this up using your OS's package manager, or obtain further instructions on how to get this setup from the <a href='https://nodejs.org/en/'>Official Website</a>.</p><p>If you're using Ubuntu, you can install <code>npm</code> using <code>apt-get</code>:</p><pre><code class="sh">$ sudo apt-get install npm
+</code></pre><p>If everything went according to plan, you should have <code>npm</code> installed:</p><pre><code class="sh">$ npm --version
+3.5.2
+</code></pre><h3>Installing Lumo</h3><p>I'm going to grab a copy of <strong>Lumo</strong> using <code>npm</code>:</p><pre><code class="sh">npm install -g lumo-cljs
+</code></pre><p>Note that the installed binary should be called <code>lumo</code> instead of <code>lumo-cljs</code>.</p><p>I'm going to check to make sure <code>lumo</code> is installed:</p><pre><code>$ lumo --version
+1.8.0
+</code></pre><p>Looking good.</p><h3>One Liners</h3><p><code>lumo</code> supports one-liners by use of the <code>-e</code>, <code>&ndash;eval</code> flag:</p><pre><code class="sh">$ lumo -e &quot;&#40;&#42; Math/PI 2&#41;&quot;
+6.283185307179586
+</code></pre><pre><code class="sh">$ LUMO&#95;VERSION=$&#40;lumo --version&#41;
+$ lumo -e &quot;&#40;as-&gt; \&quot;$LUMO&#95;VERSION\&quot; $ &#40;re-matches #\&quot;&#40;&#91;0-9&#93;+&#41;\.&#40;&#91;0-9&#93;+&#41;\.&#40;&#91;0-9&#93;+&#41;\&quot; $&#41; &#40;nth $ 2&#41; &#40;println $&#41;&#41;&quot;
+8
+</code></pre><p>But to truly leverage scripting, it would be more remarkable to write clojurescript commandline programs.</p><h2>Scripting Methods</h2><p>There are several ways to work with <strong>Lumo</strong>, and some methods are more suitable based on the OS you are using <strong>Lumo</strong> from. The first example should work on any OS platform.</p><h3>The Beginnings</h3><p>The easiest way to construct a script is to create a new file with the clojurescript extension <i>.cljs</i> and run it directly with the <code>lumo</code> commandline tool.</p><p>I'm going to create a <strong>hello.cljs</strong> file with the following contents:</p><pre><code class="clojure">&#40;println &quot;Hello World!&quot;&#41;
+</code></pre><p>Then, from the commandline:</p><pre><code class="sh">$ lumo hello.cljs
+Hello World!
+</code></pre><h3>Not Scripty Enough...</h3><p>In order for <strong>Lumo</strong> to be used for scripting, it needs to support the shell scripting execution idioms, and fortunately, it does alright.</p><p>Note that up to this point, you could happily follow along on a Windows machine. Certain functionality here is not available to Windows users <em>for now</em>. In the future, some of this functionality will be present with upcoming Windows 10 updates, which appear to be incorporating *nix scripting idioms.</p><p>I'm going to create a new file called <i>hello</i> which contains the same contents as our previous script file, except for an additional line included at the top of the file:</p><pre><code class="clojure">#!/usr/bin/env lumo
+
+&#40;println &quot;Hello World!&quot;&#41;
+</code></pre><p>If you're familiar with bash scripting, that extra line probably looks like something you've seen before. Next I'm going to make it so that I can execute this file:</p><pre><code class="sh">$ chmod 744 hello
+</code></pre><p>Executing this script file should return the same result as our clojurescript file:</p><pre><code class="sh">$ hello
+Hello World!
+</code></pre><p>This is cool and all, but there is still a lot to cover.</p><h2>Commandline Arguments</h2><p>Commandline arguments are accessed through the var <code>&#42;command-line-args&#42;</code>. I'm going to modify the <i>hello</i> script to accept the first commandline argument as the person we are saying 'hello' to:</p><pre><code class="clojure">#!/usr/bin/env lumo
+
+&#40;if-let &#91;name &#40;first &#42;command-line-args&#42;&#41;&#93;
+  &#40;println &#40;str &quot;Hello &quot; name &quot;!&quot;&#41;&#41;
+  &#40;println &quot;Hello World!&quot;&#41;&#41;
+</code></pre><p>Running this:</p><pre><code class="sh">$ hello
+Hello World!
+$ hello Ben
+Hello Ben!
+</code></pre><h2>Node Standard Libraries</h2><p>Since <strong>Lumo</strong> is built as an executable targeting the Node ecosystem, it means we can leverage everything the Node API has to offer. If you're interested in what is available to you out-of-the-box, all of the documentation on the Node API can be found <a href='https://nodejs.org/api/'>here</a>. I'm going to try writing a script called <i>listdir</i> which lists the current directory, or lists the files for a path provided as a commandline argument. All of this is done using the <a href='https://nodejs.org/api/fs.html#fs_file_system'>File System API</a>.</p><pre><code class="clojure">#!/usr/bin/env lumo
+
+
+&#40;def fs &#40;js/require &quot;fs&quot;&#41;&#41;
+
+
+&#40;defn real-path &#91;path&#93;
+  &#40;.realpathSync fs path&#41;&#41;
+
+
+&#40;defn list-dir &#91;path&#93;
+  &#40;.readdirSync fs path&#41;&#41;
+
+
+&#40;let &#91;p &#40;or &#40;first &#42;command-line-args&#42;&#41; &quot;.&quot;&#41;
+      dir-listing &#40;-&gt; p real-path list-dir&#41;&#93;
+  &#40;doseq &#91;fd dir-listing&#93;
+    &#40;println fd&#41;
+    &#41;&#41;
+</code></pre><p>Running this script results in a less feature complete <code>ls</code>:</p><pre><code class="sh">$ chmod 744 listdir
+$ listdir
+hello
+hello.cljs
+listdir
+$ listdir &#126;/.mozilla
+extensions
+firefox
+systemextensionsdev
+</code></pre><h2>External Node Dependencies</h2><p>Being able to use the Node API is great and all, but it would be spectacular if you could also use community-made libraries.</p><p>I'm always aching to make use of the infamous <i>left-pad</i> library. It would be great if it were a commandline tool called <i>leftpad</i>:</p><pre><code class="clojure">#!/usr/bin/env lumo
+
+
+&#40;def left-pad &#40;js/require &quot;left-pad&quot;&#41;&#41;
+
+
+&#40;def help-msg &quot;leftpad &lt;text&gt; &lt;num&gt; &#91;padding&#93;&quot;&#41;
+
+
+&#40;defn leftpad
+  &#40;&#91;&#93; help-msg&#41;
+  &#40;&#91;&#95;&#93; help-msg&#41;
+  &#40;&#91;text num&#93; &#40;left-pad text num&#41;&#41;
+  &#40;&#91;text num padding&#93; &#40;left-pad text num padding&#41;&#41;
+  &#40;&#91;text num padding &amp; &#95;&#93; help-msg&#41;&#41;
+
+
+&#40;println &#40;apply leftpad &#42;command-line-args&#42;&#41;&#41;
+</code></pre><p>When I attempt to run this script:</p><pre><code class="sh">$ chmod 744 leftpad
+$ leftpad
+Cannot find module 'left-pad'
+	 Function.Module.&#95;resolveFilename &#40;module.cljs:542:15&#41;
+	 Function.Module.&#95;load &#40;module.cljs:472:25&#41;
+	 Module.require &#40;module.cljs:585:17&#41;
+	 require &#40;internal/module.cljs:11:18&#41;
+	 Object.&lt;anonymous&gt; &#40;/home/benzap/.bin/leftpad:1:84&#41;
+	 Module.&#95;compile &#40;module.cljs:641:30&#41;
+	 &#40;Object.&#95;t&#41;
+	 &#40;Object.lumo.repl.caching&#95;node&#95;eval&#41;
+	 &#40;NO&#95;SOURCE&#95;FILE &lt;embedded&gt;:6127:273&#41;
+	 E &#40;NO&#95;SOURCE&#95;FILE &lt;embedded&gt;:6128:269&#41;
+</code></pre><h4>Hey... What Happened?</h4><p>Similar to Node, <strong>Lumo</strong> attempts to find the dependencies in a sub-folder called <em>node_modules</em>. I can pull in the left-pad dependency with:</p><pre><code class="sh">npm install left-pad
+</code></pre><p>Naturally upon calling this command, <code>npm</code> will complain about a missing <i>package.json</i> file, and cuss you out for not having all of the bells and whistles for developing your program. All that i'm interested in is the generated <em>node_modules</em> sub-folder containing the precious left-pad payload:</p><pre><code class="sh">$ listdir
+hello
+hello.cljs
+leftpad
+listdir
+node&#95;modules
+$ listdir ./node&#95;modules
+left-pad
+</code></pre><p>So as you can see, we have a sub-folder called <em>node_modules</em>, which contains our node dependency <em>left-pad</em>. Running the <i>leftpad</i> commandline tool as before should give us the correct output:</p><pre><code class="sh">$ leftpad
+leftpad &lt;text&gt; &lt;num&gt; &#91;padding&#93;
+$ leftpad Bacon
+leftpad &lt;text&gt; &lt;num&gt; &#91;padding&#93;
+$ leftpad Bacon 10
+     Bacon
+$ leftpad Bacon 10 -
+-----Bacon
+$ leftpad Bacon 10 - yum
+leftpad &lt;text&gt; &lt;num&gt; &#91;padding&#93;
+</code></pre><h2>Write once, Execute anywhere</h2><p>Up to this point, i've been placing all of these scripts in a sub-folder in my home directory at <code>&#126;/.bin</code>. I would love to just start using these scripts where ever I need to leftpad a string, or list directories. I'm going to go ahead and include this folder in my PATH environment variable, so I can use these commands anywhere:</p><pre><code class="sh">$ printf &quot;export PATH\nPATH=\$PATH:&#126;/.bin\n&quot; &gt;&gt; &#126;/.bashrc
+$ cd
+$ source .bashrc
+$ listdir &#126;/.bin
+hello
+hello.cljs
+leftpad
+listdir
+node&#95;modules
+$ leftpad Hello 10 -
+-----Hello
+</code></pre><h2>TL;DR</h2><p>In this blog post, I covered:</p><ul><li>How to become a <strong>Clojurescript'ing</strong> cowboy</li><li>Writing your first <strong>Clojurescript</strong> script with commandline arguments</li><li>Writing a <strong>Clojurescript</strong> script with the Standard Node API</li><li>Writing a <strong>Clojurescript</strong> script with External Node Dependencies</li></ul><h2>There's a snake in my boot!</h2><p>If you feel like i've missed something, or you wish to challenge me to a duel, you can find me on the <a href='http://clojurians.net/'>clojurians slack</a> as <strong>@benzap</strong>.</p><hr/><h2>Related Resources</h2><ul><li><a href='https://github.com/anmonteiro/lumo'>Lumo Github Page</a></li><li><a href='https://github.com/rberger/lumo-npm-example'>lumo-npm-example - Starter Project Using Lumo</a></li><li><a href='https://github.com/yogthos/mastodon-bot'>mastodon-bot - A Bot Written in Clojurescript</a></li><li><a href='http://planck-repl.org/'>Planck - Alternative Standalone Clojurescript Compiler</a></li><li><a href='https://www.npmjs.com/package/left-pad'>left-pad documentation</a></li></ul></div></div></div></div><footer class="footer"><i>This site was statically generated with ♥ using <a href="https://github.com/plexus/chestnut">chestnut</a> and <a href="https://github.com/magnars/stasis">stasis</a> - © Benjamin Zaporzan 2018</i></footer></div><script src="/js/compiled/website.js" type="text/javascript"></script></body></html>

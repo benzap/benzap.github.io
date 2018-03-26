@@ -1,3 +1,53 @@
+.anim-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.anim-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.anim-delay-500 {
+  animation-delay: 0.5s;
+}
+
+.anim-delay-700 {
+  animation-delay: 0.7s;
+}
+
+.anim-delay-1000 {
+  animation-delay: 1s;
+}
+
+@keyframes anim-fade-in {
+
+0% {
+    opacity: 0;
+  }
+  
+100% {
+    opacity: 1;
+  }
+
+}
+
+.anim-fade-in-slow {
+  animation-name: anim-fade-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.anim-fade-in-normal {
+  animation-name: anim-fade-in;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+.anim-fade-in-fast {
+  animation-name: anim-fade-in;
+  animation-duration: 0.1s;
+  animation-fill-mode: both;
+}
+
 * {
   font-family: 'Droid Serif', Serif;
   color: #012546;
@@ -16,27 +66,170 @@ body {
   background-color: #fffdf9;
 }
 
+@media (max-width: 550px) {
+
+  body {
+    overflow-y: auto;
+  }
+
+}
+
 h1 {
   padding: 12px;
   font-family: 'Roboto', Sans-Serif;
+  font-size: 2.4em;
 }
 
 h2 {
   padding: 12px;
   font-family: 'Roboto', Sans-Serif;
+  font-size: 2.0em;
+}
+
+h3 {
+  padding: 12px;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 1.6em;
+}
+
+h4 {
+  padding: 12px;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 1.4em;
+}
+
+h5 {
+  padding: 12px;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 1.4em;
+}
+
+h6 {
+  padding: 12px;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 1.4em;
+}
+
+a {
+  color: #ff6823;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #bc3b00;
 }
 
 p {
   padding: 14px;
-  font-size: 1.2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.0em;
+}
+
+pre {
+  animation-name: anim-fade-in;
+  animation-duration: 0.5s;
+  animation-delay: 2.0s;
+  animation-fill-mode: both;
+}
+
+pre code {
+  border-left: 4px solid #ddd;
+  background-color: #fdf6e3;
+  overflow: auto;
+  font-family: 'Inconsolata', monospace;
+  padding: 10px;
+  margin: 14px;
 }
 
 code {
-  border-left: 4px solid #ddd;
-  background-color: #fffbf9;
-  overflow: auto;
+  background-color: #fdf6e3;
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  color: red;
+}
+
+ul {
+  padding: 10px 10px 10px 35px;
+  font-size: 16px;
+}
+
+ol {
+  padding: 10px 10px 10px 35px;
+  font-size: 16px;
+}
+
+hr {
+  box-sizing: initial;
+  margin: 20px 5px;
+}
+
+em {
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 18px;
+}
+
+strong {
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 18px;
+}
+
+blockquote {
+  background-color: #fff1c3;
+  color: hsla(208.69565, 97.1831%, 13.921569%, 0.7);
+  margin: 10px;
   padding: 10px;
-  margin: 14px;
+  border: 2px solid #fff7dd;
+}
+
+blockquote footer {
+  color: hsla(208.69565, 97.1831%, 13.921569%, 0.5);
+  font-size: 1.0em;
+  padding: 1em 1em 1em 1em;
+}
+
+img {
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.hljs {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs span {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs>.bash {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs-name {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs-string {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs-variable {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs-meta {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs-builtin-name {
+  font-family: 'Inconsolata', monospace;
 }
 
 .full-width {
@@ -188,6 +381,10 @@ code {
 
 @media (max-width: 550px) {
 
+  .content {
+    overflow-y: initial;
+  }
+  
   body {
     overflow: auto;
   }
@@ -208,7 +405,8 @@ code {
 @media (max-width: 640px) {
 
   .footer {
-    flex-basis: 50px;
+    flex-basis: 17.5px;
+    font-size: 70%;
   }
 
 }
@@ -374,6 +572,7 @@ code {
   background-color: #fffdf9;
   box-shadow: 3px 3px 26px 0px rgba(0,0,0,0.5);
   padding: 5px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: 860px) {
