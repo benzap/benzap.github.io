@@ -200,6 +200,10 @@ img {
   text-align: center;
 }
 
+.gist {
+  padding: 1.0em;
+}
+
 .hljs {
   font-family: 'Inconsolata', monospace;
 }
@@ -213,6 +217,10 @@ img {
 }
 
 .hljs-name {
+  font-family: 'Inconsolata', monospace;
+}
+
+.hljs-symbol {
   font-family: 'Inconsolata', monospace;
 }
 

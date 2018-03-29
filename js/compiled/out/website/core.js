@@ -9,12 +9,12 @@ if(typeof website.core.app_state !== 'undefined'){
 website.core.app_state = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"current-page","current-page",-101294180),""], null));
 }
 website.core.greeting = rum.core.build_defc.call(null,(function (){
-var attrs37793 = new cljs.core.Keyword(null,"text","text",-1790561697).cljs$core$IFn$_invoke$arity$1(rum.core.react.call(null,website.core.app_state));
-return cljs.core.apply.call(null,React.createElement,"h1",((cljs.core.map_QMARK_.call(null,attrs37793))?sablono.interpreter.attributes.call(null,attrs37793):null),((cljs.core.map_QMARK_.call(null,attrs37793))?null:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs37793)], null)));
+var attrs37799 = new cljs.core.Keyword(null,"text","text",-1790561697).cljs$core$IFn$_invoke$arity$1(rum.core.react.call(null,website.core.app_state));
+return cljs.core.apply.call(null,React.createElement,"h1",((cljs.core.map_QMARK_.call(null,attrs37799))?sablono.interpreter.attributes.call(null,attrs37799):null),((cljs.core.map_QMARK_.call(null,attrs37799))?null:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs37799)], null)));
 }),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [rum.core.reactive], null),"greeting");
-var temp__5457__auto___37794 = website.utils.query_select.call(null,"#app");
-if(cljs.core.truth_(temp__5457__auto___37794)){
-var app_37795 = temp__5457__auto___37794;
+var temp__5457__auto___37800 = website.utils.query_select.call(null,"#app");
+if(cljs.core.truth_(temp__5457__auto___37800)){
+var app_37801 = temp__5457__auto___37800;
 rum.core.mount.call(null,website.core.greeting.call(null),document.app());
 } else {
 }

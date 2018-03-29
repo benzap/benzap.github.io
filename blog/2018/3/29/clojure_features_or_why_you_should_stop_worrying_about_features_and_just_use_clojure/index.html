@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp"><head><meta charset="utf-8"><title>Clojure Features: Or why you should stop worrying about features and just use Clojure | Benjamin Zaporzan</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+           <link rel="manifest" href="/manifest.json">
+           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+           <meta name="theme-color" content="#ffffff"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"><link href="/css/highlight.css" rel="stylesheet" type="text/css"><link href="/css/style.css" rel="stylesheet" type="text/css"><script src="/js/highlight.js" type="text/javascript"></script><script>hljs.initHighlightingOnLoad();</script></head><body><div class="flex-container"><header class="header full-width"><div class="name"><img src="/media/profile.svg"></div><div class="menu"><div class="menu-item"><a href="/index.html">Home</a></div><div class="menu-item"><a href="/about.html">About Me</a></div><div class="menu-item"><a href="/blog/">Blog</a></div><div class="menu-item"><a href="/contact.html">Contact Me</a></div><div class="menu-item"><a href="/projects.html">Projects</a></div></div></header><div class="content"><div class="page-container"><div class="page-view"><h1 style="text-align: center;">Clojure Features: Or why you should stop worrying about features and just use Clojure</h1><div class="inline-markdown"><h1>Introduction</h1><p>Back in November 2017, a <a href='https://medium.com/@kasperpeulen/10-features-from-various-modern-languages-that-i-would-like-to-see-in-any-programming-language-f2a4a8ee6727'>blog post</a> popped up which discussed a series of language features that one would love to see present in any programming language.</p><p>In response, I created a <a href='https://gist.github.com/benzap/0ecd35c4da80d750fb746bf6e90ec4eb'>github gist</a> which showed off many equivalent features in clojurescript.</p><p>Instead of recapping on the gist, I feel like a lot was left absent. There are a ton of features out there which were never mentioned. Every flavour or trend you can think of in recent developments, you can find a taste of it in clojure and clojurescript.</p><p>I could talk about clojure's strengths in replicating language features through homoiconicity, but i'd rather just step through what clojure and clojurescript has right now, and how you can learn more about each one.</p><hr/><h1>Golang - Channels</h1><p>The Go Programming language has this concept of Channels, quoting <a href='https://gobyexample.com/channels'>GoByExample.com</a>:</p><blockquote><p> Channels are the pipes that connect concurrent goroutines. You can   send values into channels from one goroutine and receive those   values into another goroutine. </p></blockquote><p>An example within Go:</p><pre><code class="go">package main
+
+import &quot;fmt&quot;
+
+func main&#40;&#41; {
+    messages := make&#40;chan string&#41;
+
+    go func&#40;&#41; { messages &lt;- &quot;ping&quot; }&#40;&#41;
+
+    msg := &lt;-messages
+
+    fmt.Println&#40;msg&#41;
+}
+</code></pre><h2>core.async</h2><p>Some clojure devs decided they wanted something similar to goroutines and channels, so they developed <strong>core.async</strong>.</p><p>Here's the Go example written in core.async:</p><pre><code class="clojure">&#40;require '&#91;clojure.core.async :refer &#91;go chan &gt;! &lt;!!&#93;&#93;&#41;
+
+&#40;def messages &#40;chan&#41;&#41;
+
+&#40;go &#40;&gt;! messages &quot;ping&quot;&#41;&#41;
+
+&#40;println &#40;&lt;!! messages&#41;&#41;
+</code></pre><p><strong>core.async</strong> can also be used in clojurescript, and leaves you   dealing with less asynchronous cruft in frontend development.</p><p>For a better breakdown on what <strong>core.async</strong> has to offer, I highly recommend reading Chapter 11: <a href='https://www.braveclojure.com/core-async/'>Mastering Concurrent Processes with core.async</a> in the book <a href='https://www.braveclojure.com/clojure-for-the-brave-and-true/'>Clojure For the Brave and True</a>.</p><hr/><h1>Rust - Pattern Matching</h1><p>Rust makes great use of built-in pattern matching using the <code>match</code> keyword. Quoting <a href='https://doc.rust-lang.org/book/match.html'>the rust book</a>:</p><blockquote><p> match allows us to compare a value against a series of patterns and   then execute code based on which pattern matches. Patterns can be   made up of literal values, variable names, wildcards, and many other   things. </p></blockquote><p>An example within Rust:</p><pre><code class="rust">enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
+
+fn value&#95;in&#95;cents&#40;coin: Coin&#41; -&gt; u32 {
+    match coin {
+        Coin::Penny =&gt; 1,
+        Coin::Nickel =&gt; 5,
+        Coin::Dime =&gt; 10,
+        Coin::Quarter =&gt; 25,
+    }
+}
+</code></pre><h2>core.match</h2><p><strong>core.match</strong> was developed to resemble pattern matching within   erlang, but since Rust is becoming more popular, it fit as a better   comparison.</p><p>Here's an example of <strong>core.match</strong>, which is similar to the Rust example:</p><pre><code class="clojure">&#40;require '&#91;clojure.core.match :refer &#91;match&#93;&#93;&#41;
+
+
+&#40;defn value-in-cents &#91;coin&#93;
+  &#40;match &#91;coin&#93;
+    :penny 1
+    :nickel 5
+    :dime 10
+    :querter 25&#41;&#41;
+</code></pre><p><a href='https://github.com/clojure/core.match/wiki/Overview'>Here</a> is a much broader overview of what can be done with <strong>core.match</strong>.</p><hr/><h1>Javascript - JSX</h1><p>One upcoming feature within javascript is <strong>Javascript Syntax Extensions</strong>. This feature was introduced to represent HTML elements within rendered <a href='https://reactjs.org/'>ReactJS</a> Components:</p><pre><code class="javascript">function formatName&#40;user&#41; {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+};
+
+const element = &#40;
+  &lt;h1&gt;
+    Hello, {formatName&#40;user&#41;}!
+  &lt;/h1&gt;
+&#41;;
+
+ReactDOM.render&#40;
+  element,
+  document.getElementById&#40;'root'&#41;
+&#41;;
+</code></pre><p>This requires the use of the tool <a href='https://babeljs.io/'>babel</a> to compile the next generation of javascript into something that is understood by most web browsers.</p><h2>Sablono</h2><p><strong>Sablono</strong> is similar to JSX, in that it converts a data structure into React DOM elements. Its representation is based on the markup language <a href='https://github.com/weavejester/hiccup'>hiccup</a>.</p><p>Several clojurescript libraries make use of <a href='https://github.com/r0man/sablono'>Sablono</a> when wrapping <a href='https://reactjs.org/'>ReactJS</a>. A popular one is <a href='https://github.com/tonsky/rum'>rum</a>, which is an excellent library taking advantage of <a href='https://reactjs.org/'>ReactJS</a>, while leveraging a lot of things that make clojurescript great.</p><p>Here is the JSX example represented using <strong>rum</strong>:</p><pre><code class="clojure">&#40;require '&#91;rum.core :as rum&#93;&#41;
+
+
+&#40;defn format-name &#91;{:keys &#91;first-name last-name&#93;}&#93;
+  &#40;str first-name &quot; &quot; last-name&#41;&#41;
+
+
+&#40;def user {:first-name &quot;Harper&quot;
+           :last-name &quot;Perez&quot;}&#41;
+
+
+&#40;rum/defc element &#91;&#93;
+  &#91;:h1 &#40;str &quot;Hello, &quot; &#40;format-name user&#41;&#41;&#93;&#41;
+
+
+&#40;rum/mount &#40;element&#41; &#40;.getElementById js/document &quot;root&quot;&#41;&#41;
+</code></pre><p>Another popular clojurescript library which employs its own take on the hiccup syntax, and which also wraps <a href='https://reactjs.org/'>ReactJS</a> is <a href='https://github.com/reagent-project/reagent'>reagent</a>.</p><hr/><h1>Prolog - Logic Programming</h1><p>It is unfair to say that Prolog features logic programming, since Prolog is a <em>logic programming language</em>. The Prolog language is used heavily in artificial intelligence and computational linguistics.</p><p>Here is an example of a logic program written in prolog:</p><pre><code class="prolog">mother&#95;child&#40;trude, sally&#41;.
+ 
+father&#95;child&#40;tom, sally&#41;.
+father&#95;child&#40;tom, erica&#41;.
+father&#95;child&#40;mike, tom&#41;.
+ 
+sibling&#40;X, Y&#41;      :- parent&#95;child&#40;Z, X&#41;, parent&#95;child&#40;Z, Y&#41;.
+ 
+parent&#95;child&#40;X, Y&#41; :- father&#95;child&#40;X, Y&#41;.
+parent&#95;child&#40;X, Y&#41; :- mother&#95;child&#40;X, Y&#41;.
+</code></pre><p>And here is a relevant logic query on the logic program:</p><pre><code class="prolog">?- sibling&#40;sally, erica&#41;.
+Yes
+</code></pre><h2>core.logic</h2><p>Logic engines exist in many languages, but clojure has the advantage of incorporating the engine in a way that is truly beautiful. The <strong>core.logic</strong> implementation is based off of <a href='http://minikanren.org/'>miniKanren</a>. The original implementation of <strong>miniKanren</strong> is written in Scheme, and is presented in the book <a href='https://mitpress.mit.edu/books/reasoned-schemer'>The Reasoned Schemer</a>, a recommended read.</p><p>Here is an example of the prolog example in <strong>core.logic</strong>:</p><pre><code class="clojure">&#40;require '&#91;clojure.core.logic :refer :all&#93;&#41;
+&#40;require '&#91;clojure.core.logic.pldb :as pldb&#93;&#41; ;; Immutable Fact Database
+
+
+;; DB Relations
+&#40;pldb/db-rel mother-child mother child&#41;
+&#40;pldb/db-rel father-child father child&#41;
+
+
+;; Creating the DB with the facts
+&#40;def facts
+  &#40;-&gt; &#40;pldb/db&#41;
+      &#40;pldb/db-fact mother-child :trude :sally&#41;
+      &#40;pldb/db-fact father-child :tom :sally&#41;
+      &#40;pldb/db-fact father-child :tom :erica&#41;
+      &#40;pldb/db-fact father-child :mike :tom&#41;&#41;&#41;
+
+
+&#40;defn parent-child &#91;X Y&#93;
+  &#40;conde
+    &#91;&#40;mother-child X Y&#41;&#93;
+    &#91;&#40;father-child X Y&#41;&#93;&#41;&#41;
+
+
+&#40;defn sibling &#91;X Y&#93;
+  &#40;fresh &#91;Z&#93;
+    &#40;parent-child Z X&#41;
+    &#40;parent-child Z Y&#41;&#41;&#41;
+
+
+&#40;run-db 1 facts &#91;&#95;&#93;
+  &#40;sibling :sally :erica&#41;&#41; ;; &#40;&#95;0&#41;, which is 'true'
+</code></pre><p>There are <a href='https://tirkarthi.github.io/clojure/2017/10/28/coloring-india.html'>a few</a> articles which talk about the uses for logic programming, but the recommended approach to learn about its ins and outs is to dive into the <a href='http://learnprolognow.org/'>Learn Prolog Now!</a> tutorials, or to read through and follow the examples in <a href='https://mitpress.mit.edu/books/reasoned-schemer'>The Reasoned Schemer</a>.</p><hr/><h1>(Programming Lang) - (Lang Feature)</h1><p>So far, i've covered ~4 features, with examples showing similar results in clojure(script). If there's an interesting feature that you think hasn't been recreated in clojure, or you think is difficult to recreate in clojure, I would love to hear about it! You can find me on the <a href='http://clojurians.net/'>clojurians slack</a> as <strong>@benzap</strong>.</p><hr/><h2>Related Resources</h2><ul><li><a href='https://golang.org/'>Go Programming Language Home Page</a></li><li><a href='http://clojure.com/blog/2013/06/28/clojure-core-async-channels.html'>core.async Rationale</a></li><li><a href='https://www.rust-lang.org/en-US/'>Rust Programming Language Home Page</a></li><li><a href='https://github.com/clojure/core.match'>core.match Github Page</a></li><li><a href='https://reactjs.org/'>React JS Home Page</a></li><li><a href='https://github.com/tonsky/rum'>rum Github Page</a></li><li><a href='http://lpn.swi-prolog.org/lpnpage.php?pageid=online'>Learn Prolog Now! Home Page</a></li><li><a href='https://github.com/clojure/core.logic/wiki'>core.logic Wiki Page</a></li></ul></div></div></div></div><footer class="footer"><i>This site was statically generated with ♥ using <a href="https://github.com/plexus/chestnut">chestnut</a> and <a href="https://github.com/magnars/stasis">stasis</a> - © Benjamin Zaporzan 2018</i></footer></div><script src="/js/compiled/website.js" type="text/javascript"></script></body></html>
