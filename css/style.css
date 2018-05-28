@@ -618,9 +618,9 @@ img {
 .project-card {
   display: flex;
   border-radius: 1px;
-  border-color: #c6ccd0;
+  border-color: #d2e1ee;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   flex-direction: column;
   margin: 7px;
   padding: 7px;
@@ -639,12 +639,16 @@ img {
 }
 
 .project-carot {
-  color: #ffde77;
-  background-color: #6396c4;
-  border-radius: 5px;
-  padding: 5px;
+  border-width: 1px;
+  border-color: #e2e5e7;
   margin: 3px;
+  padding: 5px;
+  border-style: solid;
   font-size: 0.8em;
+  padding-right: 10px;
+  border-radius: 5px;
+  color: #6396c4;
+  padding-left: 10px;
 }
 
 .post-listing {
@@ -681,4 +685,76 @@ a.post-element {
   font-size: 0.8em;
   padding-left: 5px;
   padding-top: 5px;
+}
+
+.inline-markdown>.fif-repl {
+  padding-bottom: 0.5em;
+  font-family: 'Inconsolata', monospace;
+  padding: 14px;
+  white-space: pre-wrap;
+  animation-name: anim-fade-in;
+  animation-fill-mode: both;
+  font-size: 1.0em;
+  animation-delay: 2.0s;
+  padding-top: 0.5em;
+  animation-duration: 0.5s;
+}
+
+.fif-repl-component {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 100%;
+}
+
+.fif-repl-component>textarea {
+  width: 100%;
+  font-family: 'Inconsolata', monospace;
+  border: none;
+  padding: 0.5em;
+  flex-shrink: 0;
+  white-space: pre;
+  outline: none;
+  border-bottom-color: #ffc4aa;
+  flex-grow: 1;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  overflow-x: auto;
+  font-size: 1.2em;
+  background-color: #ffe7dd;
+  border-radius: 5px;
+  resize: none;
+  flex-basis: 200px;
+}
+
+.fif-repl-component>.output-string {
+  width: 100%;
+  padding: 0.5em;
+  border-bottom-color: #88afd2;
+  flex-grow: 0;
+  word-wrap: break-word;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  overflow: auto;
+  font-size: 1.2em;
+  background-color: #c0d4e7;
+  border-radius: 5px;
+  font-style: italic;
+  max-height: 200px;
+}
+
+.fif-repl-component>.output-stack {
+  width: 100%;
+  font-family: 'Inconsolata', monospace;
+  padding: 0.5em;
+  border-bottom-color: #ffca23;
+  flex-grow: 0;
+  word-wrap: break-word;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  overflow: auto;
+  font-size: 1.2em;
+  background-color: #ffeaaa;
+  border-radius: 5px;
+  max-height: 200px;
 }

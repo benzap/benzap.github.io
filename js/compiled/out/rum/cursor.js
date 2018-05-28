@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.217 {}
+// Compiled by ClojureScript 1.10.238 {}
 goog.provide('rum.cursor');
 goog.require('cljs.core');
 
@@ -128,8 +128,8 @@ rum.cursor.Cursor.cljs$lang$type = true;
 
 rum.cursor.Cursor.cljs$lang$ctorStr = "rum.cursor/Cursor";
 
-rum.cursor.Cursor.cljs$lang$ctorPrWriter = (function (this__4160__auto__,writer__4161__auto__,opt__4162__auto__){
-return cljs.core._write.call(null,writer__4161__auto__,"rum.cursor/Cursor");
+rum.cursor.Cursor.cljs$lang$ctorPrWriter = (function (this__4161__auto__,writer__4162__auto__,opt__4163__auto__){
+return cljs.core._write.call(null,writer__4162__auto__,"rum.cursor/Cursor");
 });
 
 /**
