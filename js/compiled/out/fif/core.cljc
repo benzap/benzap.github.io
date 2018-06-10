@@ -9,7 +9,8 @@
    [fif.stdlib :refer [import-stdlib]]
    [fif.impl.stack-machine :refer [new-stack-machine]]
    [fif.impl.prepl]
-   [fif.repl]))
+   [fif.repl])
+  #?(:clj (:gen-class)))
 
 
 (def get-stack stack/get-stack)
@@ -137,12 +138,6 @@
      (-> *default-stack*
          (stack/set-step-max step-max#)
          (stack.evaluators/eval-fn (quote ~body)))))
-
-
-(defn -main
-  "Main Execution opens a commandline repl of the *default-stack*"
-  [& args]
-  (repl))
 
 
 ;;

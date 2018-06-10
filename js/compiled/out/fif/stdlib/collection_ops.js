@@ -15,8 +15,8 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  *   the two elements on the main stack.
  */
 fif.stdlib.collection_ops.op_unpair = (function fif$stdlib$collection_ops$op_unpair(sm){
-var vec__39896 = fif.stack_machine.get_stack.call(null,sm);
-var x = cljs.core.nth.call(null,vec__39896,(0),null);
+var vec__39898 = fif.stack_machine.get_stack.call(null,sm);
+var x = cljs.core.nth.call(null,vec__39898,(0),null);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,sm),cljs.core.first.call(null,x)),cljs.core.second.call(null,x)));
 });
 /**
@@ -24,12 +24,12 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.cal
  *   at the front of the code queue.
  */
 fif.stdlib.collection_ops.apply_op = (function fif$stdlib$collection_ops$apply_op(sm){
-var vec__39901 = fif.stack_machine.get_stack.call(null,sm);
-var coll = cljs.core.nth.call(null,vec__39901,(0),null);
-return fif.stack_machine.update_code.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,sm)),((function (vec__39901,coll){
-return (function (p1__39900_SHARP_,p2__39899_SHARP_){
-return cljs.core.concat.call(null,p2__39899_SHARP_,p1__39900_SHARP_);
-});})(vec__39901,coll))
+var vec__39903 = fif.stack_machine.get_stack.call(null,sm);
+var coll = cljs.core.nth.call(null,vec__39903,(0),null);
+return fif.stack_machine.update_code.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,sm)),((function (vec__39903,coll){
+return (function (p1__39902_SHARP_,p2__39901_SHARP_){
+return cljs.core.concat.call(null,p2__39901_SHARP_,p1__39902_SHARP_);
+});})(vec__39903,coll))
 ,coll);
 });
 /**

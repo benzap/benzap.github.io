@@ -80,9 +80,9 @@ return fif.stack_machine.dequeue_code.call(null,fif.stdlib.variable.exit_variabl
  * Word function used to set a global variable to a provided value
  */
 fif.stdlib.variable.setg = (function fif$stdlib$variable$setg(sm){
-var vec__39747 = fif.stack_machine.get_stack.call(null,sm);
-var val = cljs.core.nth.call(null,vec__39747,(0),null);
-var sym = cljs.core.nth.call(null,vec__39747,(1),null);
+var vec__39749 = fif.stack_machine.get_stack.call(null,sm);
+var val = cljs.core.nth.call(null,vec__39749,(0),null);
+var sym = cljs.core.nth.call(null,vec__39749,(1),null);
 if(!((sym instanceof cljs.core.Symbol))){
 return fif.stack_machine.exceptions.raise_validation_error.call(null,sm,(1),sym,"Variable name must be a symbol");
 } else {
@@ -98,9 +98,9 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.words.set_glob
  * Word function used to set a local variable to a provided value
  */
 fif.stdlib.variable.setl = (function fif$stdlib$variable$setl(sm){
-var vec__39750 = fif.stack_machine.get_stack.call(null,sm);
-var val = cljs.core.nth.call(null,vec__39750,(0),null);
-var sym = cljs.core.nth.call(null,vec__39750,(1),null);
+var vec__39752 = fif.stack_machine.get_stack.call(null,sm);
+var val = cljs.core.nth.call(null,vec__39752,(0),null);
+var sym = cljs.core.nth.call(null,vec__39752,(1),null);
 if(!((sym instanceof cljs.core.Symbol))){
 return fif.stack_machine.exceptions.raise_validation_error.call(null,sm,(1),sym,"Variable name must be a symbol");
 } else {

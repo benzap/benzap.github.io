@@ -37,21 +37,21 @@ goog.require('fif.stack_machine.evaluators');
  * 
  */
 fif.impl.prepl.prepl_eval = (function fif$impl$prepl$prepl_eval(sm,input_string,output_fn){
-var _STAR_print_newline_STAR_41248 = cljs.core._STAR_print_newline_STAR_;
-var _STAR_print_fn_STAR_41249 = cljs.core._STAR_print_fn_STAR_;
+var _STAR_print_newline_STAR_41250 = cljs.core._STAR_print_newline_STAR_;
+var _STAR_print_fn_STAR_41251 = cljs.core._STAR_print_fn_STAR_;
 cljs.core._STAR_print_newline_STAR_ = true;
 
-cljs.core._STAR_print_fn_STAR_ = ((function (_STAR_print_newline_STAR_41248,_STAR_print_fn_STAR_41249){
-return (function (p1__41247_SHARP_){
-return output_fn.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"tag","tag",-1290361223),new cljs.core.Keyword(null,"out","out",-910545517),new cljs.core.Keyword(null,"value","value",305978217),p1__41247_SHARP_], null));
-});})(_STAR_print_newline_STAR_41248,_STAR_print_fn_STAR_41249))
+cljs.core._STAR_print_fn_STAR_ = ((function (_STAR_print_newline_STAR_41250,_STAR_print_fn_STAR_41251){
+return (function (p1__41249_SHARP_){
+return output_fn.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"tag","tag",-1290361223),new cljs.core.Keyword(null,"out","out",-910545517),new cljs.core.Keyword(null,"value","value",305978217),p1__41249_SHARP_], null));
+});})(_STAR_print_newline_STAR_41250,_STAR_print_fn_STAR_41251))
 ;
 
 try{var evaled_sm = fif.stack_machine.evaluators.eval_string.call(null,sm,input_string);
 cljs.core.flush.call(null);
 
 return evaled_sm;
-}finally {cljs.core._STAR_print_fn_STAR_ = _STAR_print_fn_STAR_41249;
+}finally {cljs.core._STAR_print_fn_STAR_ = _STAR_print_fn_STAR_41251;
 
-cljs.core._STAR_print_newline_STAR_ = _STAR_print_newline_STAR_41248;
+cljs.core._STAR_print_newline_STAR_ = _STAR_print_newline_STAR_41250;
 }});

@@ -36,18 +36,18 @@ var this__4172__auto____$1 = this;
 return this__4172__auto____$1.cljs$core$ILookup$_lookup$arity$3(null,k__4173__auto__,null);
 });
 
-fif.impl.repl.Repl.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__4174__auto__,k41255,else__4175__auto__){
+fif.impl.repl.Repl.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__4174__auto__,k41257,else__4175__auto__){
 var self__ = this;
 var this__4174__auto____$1 = this;
-var G__41259 = k41255;
-var G__41259__$1 = (((G__41259 instanceof cljs.core.Keyword))?G__41259.fqn:null);
-switch (G__41259__$1) {
+var G__41261 = k41257;
+var G__41261__$1 = (((G__41261 instanceof cljs.core.Keyword))?G__41261.fqn:null);
+switch (G__41261__$1) {
 case "*sm":
 return self__._STAR_sm;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k41255,else__4175__auto__);
+return cljs.core.get.call(null,self__.__extmap,k41257,else__4175__auto__);
 
 }
 });
@@ -63,10 +63,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__4187__auto__,cljs.core.p
 return cljs.core.pr_sequential_writer.call(null,writer__4187__auto__,pr_pair__4189__auto__,"#fif.impl.repl.Repl{",", ","}",opts__4188__auto__,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"*sm","*sm",-1345068121),self__._STAR_sm],null))], null),self__.__extmap));
 });
 
-fif.impl.repl.Repl.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__41254){
+fif.impl.repl.Repl.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__41256){
 var self__ = this;
-var G__41254__$1 = this;
-return (new cljs.core.RecordIter((0),G__41254__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"*sm","*sm",-1345068121)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__41256__$1 = this;
+return (new cljs.core.RecordIter((0),G__41256__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"*sm","*sm",-1345068121)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 fif.impl.repl.Repl.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__4170__auto__){
@@ -105,10 +105,10 @@ return h__4030__auto____$1;
 }
 });
 
-fif.impl.repl.Repl.prototype.cljs$core$IEquiv$_equiv$arity$2 = (function (this41256,other41257){
+fif.impl.repl.Repl.prototype.cljs$core$IEquiv$_equiv$arity$2 = (function (this41258,other41259){
 var self__ = this;
-var this41256__$1 = this;
-return ((!((other41257 == null))) && ((this41256__$1.constructor === other41257.constructor)) && (cljs.core._EQ_.call(null,this41256__$1._STAR_sm,other41257._STAR_sm)) && (cljs.core._EQ_.call(null,this41256__$1.__extmap,other41257.__extmap)));
+var this41258__$1 = this;
+return ((!((other41259 == null))) && ((this41258__$1.constructor === other41259.constructor)) && (cljs.core._EQ_.call(null,this41258__$1._STAR_sm,other41259._STAR_sm)) && (cljs.core._EQ_.call(null,this41258__$1.__extmap,other41259.__extmap)));
 });
 
 fif.impl.repl.Repl.prototype.fif$protocols$repl$IRepl$ = cljs.core.PROTOCOL_SENTINEL;
@@ -173,15 +173,15 @@ return (new fif.impl.repl.Repl(self__._STAR_sm,self__.__meta,cljs.core.not_empty
 }
 });
 
-fif.impl.repl.Repl.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4179__auto__,k__4180__auto__,G__41254){
+fif.impl.repl.Repl.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4179__auto__,k__4180__auto__,G__41256){
 var self__ = this;
 var this__4179__auto____$1 = this;
-var pred__41260 = cljs.core.keyword_identical_QMARK_;
-var expr__41261 = k__4180__auto__;
-if(cljs.core.truth_(pred__41260.call(null,new cljs.core.Keyword(null,"*sm","*sm",-1345068121),expr__41261))){
-return (new fif.impl.repl.Repl(G__41254,self__.__meta,self__.__extmap,null));
+var pred__41262 = cljs.core.keyword_identical_QMARK_;
+var expr__41263 = k__4180__auto__;
+if(cljs.core.truth_(pred__41262.call(null,new cljs.core.Keyword(null,"*sm","*sm",-1345068121),expr__41263))){
+return (new fif.impl.repl.Repl(G__41256,self__.__meta,self__.__extmap,null));
 } else {
-return (new fif.impl.repl.Repl(self__._STAR_sm,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__4180__auto__,G__41254),null));
+return (new fif.impl.repl.Repl(self__._STAR_sm,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__4180__auto__,G__41256),null));
 }
 });
 
@@ -191,10 +191,10 @@ var this__4184__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.MapEntry(new cljs.core.Keyword(null,"*sm","*sm",-1345068121),self__._STAR_sm,null))], null),self__.__extmap));
 });
 
-fif.impl.repl.Repl.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__4171__auto__,G__41254){
+fif.impl.repl.Repl.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__4171__auto__,G__41256){
 var self__ = this;
 var this__4171__auto____$1 = this;
-return (new fif.impl.repl.Repl(self__._STAR_sm,G__41254,self__.__extmap,self__.__hash));
+return (new fif.impl.repl.Repl(self__._STAR_sm,G__41256,self__.__extmap,self__.__hash));
 });
 
 fif.impl.repl.Repl.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__4177__auto__,entry__4178__auto__){
@@ -231,8 +231,8 @@ return (new fif.impl.repl.Repl(_STAR_sm,null,null,null));
 /**
  * Factory function for fif.impl.repl/Repl, taking a map of keywords to field values.
  */
-fif.impl.repl.map__GT_Repl = (function fif$impl$repl$map__GT_Repl(G__41258){
-return (new fif.impl.repl.Repl(new cljs.core.Keyword(null,"*sm","*sm",-1345068121).cljs$core$IFn$_invoke$arity$1(G__41258),null,cljs.core.not_empty.call(null,cljs.core.dissoc.call(null,G__41258,new cljs.core.Keyword(null,"*sm","*sm",-1345068121))),null));
+fif.impl.repl.map__GT_Repl = (function fif$impl$repl$map__GT_Repl(G__41260){
+return (new fif.impl.repl.Repl(new cljs.core.Keyword(null,"*sm","*sm",-1345068121).cljs$core$IFn$_invoke$arity$1(G__41260),null,cljs.core.not_empty.call(null,cljs.core.dissoc.call(null,G__41260,new cljs.core.Keyword(null,"*sm","*sm",-1345068121))),null));
 });
 
 fif.impl.repl.new_repl = (function fif$impl$repl$new_repl(sm){

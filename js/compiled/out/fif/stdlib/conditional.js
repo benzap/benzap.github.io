@@ -171,8 +171,8 @@ if(cljs.core._EQ_.call(null,arg,fif.stdlib.conditional.arg_if_token)){
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stash.call(null,fif.stack_machine.push_flag.call(null,sm,fif.stdlib.conditional.inner_conditional_flag),fif.stack_machine.sub_stack.push_sub_stack.call(null,stash,arg)));
 } else {
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.conditional.arg_then_token)){
-var vec__39828 = fif.stack_machine.get_stack.call(null,sm);
-var flag = cljs.core.nth.call(null,vec__39828,(0),null);
+var vec__39830 = fif.stack_machine.get_stack.call(null,sm);
+var flag = cljs.core.nth.call(null,vec__39830,(0),null);
 var condition_body = fif.stack_machine.sub_stack.get_sub_stack.call(null,stash);
 var new_code = cljs.core.concat.call(null,cljs.core.reverse.call(null,condition_body),(new cljs.core.List(null,fif.stdlib.conditional.arg_then_token,null,(1),null)),fif.stack_machine.get_code.call(null,fif.stack_machine.dequeue_code.call(null,sm)));
 if(cljs.core.truth_(fif.stdlib.conditional.condition_true_QMARK_.call(null,flag))){

@@ -8,8 +8,8 @@ fif.stack_machine.error_handling.error_symbol = new cljs.core.Symbol(null,"ERR##
  * Creates a new error object
  */
 fif.stack_machine.error_handling.new_error_object = (function fif$stack_machine$error_handling$new_error_object(var_args){
-var G__39558 = arguments.length;
-switch (G__39558) {
+var G__36983 = arguments.length;
+switch (G__36983) {
 case 2:
 return fif.stack_machine.error_handling.new_error_object.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -41,8 +41,8 @@ return cljs.core._EQ_.call(null,cljs.core.first.call(null,obj),fif.stack_machine
  * Creates an error object for stack errors.
  */
 fif.stack_machine.error_handling.stack_error = (function fif$stack_machine$error_handling$stack_error(var_args){
-var G__39561 = arguments.length;
-switch (G__39561) {
+var G__36986 = arguments.length;
+switch (G__36986) {
 case 3:
 return fif.stack_machine.error_handling.stack_error.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -83,8 +83,8 @@ return and__3911__auto__;
  * Creates an error object for system errors.
  */
 fif.stack_machine.error_handling.system_error = (function fif$stack_machine$error_handling$system_error(var_args){
-var G__39564 = arguments.length;
-switch (G__39564) {
+var G__36989 = arguments.length;
+switch (G__36989) {
 case 4:
 return fif.stack_machine.error_handling.system_error.cljs$core$IFn$_invoke$arity$4((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]));
 

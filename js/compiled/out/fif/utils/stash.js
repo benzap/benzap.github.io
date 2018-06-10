@@ -12,8 +12,8 @@ fif.utils.stash.create_stash = (function fif$utils$stash$create_stash(){
 return cljs.core.PersistentVector.EMPTY;
 });
 fif.utils.stash.new_stash = (function fif$utils$stash$new_stash(var_args){
-var G__39698 = arguments.length;
-switch (G__39698) {
+var G__39700 = arguments.length;
+switch (G__39700) {
 case 2:
 return fif.utils.stash.new_stash.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -40,14 +40,14 @@ fif.utils.stash.new_stash.cljs$lang$maxFixedArity = 2;
 
 fif.utils.stash.update_stash = (function fif$utils$stash$update_stash(var_args){
 var args__4502__auto__ = [];
-var len__4499__auto___39703 = arguments.length;
-var i__4500__auto___39704 = (0);
+var len__4499__auto___39705 = arguments.length;
+var i__4500__auto___39706 = (0);
 while(true){
-if((i__4500__auto___39704 < len__4499__auto___39703)){
-args__4502__auto__.push((arguments[i__4500__auto___39704]));
+if((i__4500__auto___39706 < len__4499__auto___39705)){
+args__4502__auto__.push((arguments[i__4500__auto___39706]));
 
-var G__39705 = (i__4500__auto___39704 + (1));
-i__4500__auto___39704 = G__39705;
+var G__39707 = (i__4500__auto___39706 + (1));
+i__4500__auto___39706 = G__39707;
 continue;
 } else {
 }
@@ -66,13 +66,13 @@ return cljs.core.apply.call(null,cljs.core.update_in,stash,new cljs.core.Persist
 fif.utils.stash.update_stash.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.utils.stash.update_stash.cljs$lang$applyTo = (function (seq39700){
-var G__39701 = cljs.core.first.call(null,seq39700);
-var seq39700__$1 = cljs.core.next.call(null,seq39700);
-var G__39702 = cljs.core.first.call(null,seq39700__$1);
-var seq39700__$2 = cljs.core.next.call(null,seq39700__$1);
+fif.utils.stash.update_stash.cljs$lang$applyTo = (function (seq39702){
+var G__39703 = cljs.core.first.call(null,seq39702);
+var seq39702__$1 = cljs.core.next.call(null,seq39702);
+var G__39704 = cljs.core.first.call(null,seq39702__$1);
+var seq39702__$2 = cljs.core.next.call(null,seq39702__$1);
 var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39701,G__39702,seq39700__$2);
+return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39703,G__39704,seq39702__$2);
 });
 
 fif.utils.stash.remove_stash = (function fif$utils$stash$remove_stash(stash){

@@ -13,15 +13,15 @@ goog.require('fif.stack_machine');
  */
 fif.stack_machine.variable.wrap_global_variable = (function fif$stack_machine$variable$wrap_global_variable(value){
 return (function (sm){
-return fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,sm),(function (p1__39742_SHARP_,p2__39741_SHARP_){
-return cljs.core.concat.call(null,p2__39741_SHARP_,p1__39742_SHARP_);
+return fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,sm),(function (p1__39744_SHARP_,p2__39743_SHARP_){
+return cljs.core.concat.call(null,p2__39743_SHARP_,p1__39744_SHARP_);
 }),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [value], null));
 });
 });
 fif.stack_machine.variable.wrap_local_variable = (function fif$stack_machine$variable$wrap_local_variable(value){
 return (function (sm){
-return fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,sm),(function (p1__39744_SHARP_,p2__39743_SHARP_){
-return cljs.core.concat.call(null,p2__39743_SHARP_,p1__39744_SHARP_);
+return fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,sm),(function (p1__39746_SHARP_,p2__39745_SHARP_){
+return cljs.core.concat.call(null,p2__39745_SHARP_,p1__39746_SHARP_);
 }),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [value], null));
 });
 });

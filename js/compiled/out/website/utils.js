@@ -2,8 +2,8 @@
 goog.provide('website.utils');
 goog.require('cljs.core');
 website.utils.query_select = (function website$utils$query_select(var_args){
-var G__38407 = arguments.length;
-switch (G__38407) {
+var G__39566 = arguments.length;
+switch (G__39566) {
 case 1:
 return website.utils.query_select.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
