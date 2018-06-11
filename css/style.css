@@ -293,6 +293,8 @@ img {
     padding: 0;
     padding-top: 10px;
     padding-bottom: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
 }
@@ -790,6 +792,42 @@ a.post-element {
   font-family: 'Inconsolata', monospace;
 }
 
+.console-header-text {
+  color: #e2e5e7;
+  font-weight: bold;
+  min-height: 1.3em;
+  line-height: 1.3em;
+  padding-bottom: 0.5em;
+  font-family: 'Inconsolata', monospace;
+  word-wrap: break-word;
+  font-size: 1.3em;
+}
+
+@media (max-width: 550px) {
+
+  .console-header-text {
+    font-size: 1.0em;
+  }
+
+}
+
+.console-sub-header-text {
+  color: #c6ccd0;
+  min-height: 1.2em;
+  line-height: 1.2em;
+  font-family: 'Inconsolata', monospace;
+  word-wrap: break-word;
+  font-size: 1.2em;
+}
+
+@media (max-width: 550px) {
+
+  .console-sub-header-text {
+    font-size: 0.8em;
+  }
+
+}
+
 .console-output-text {
   color: #6396c4;
   min-height: 1.2em;
@@ -797,6 +835,14 @@ a.post-element {
   font-family: 'Inconsolata', monospace;
   word-wrap: break-word;
   font-size: 1.2em;
+}
+
+@media (max-width: 550px) {
+
+  .console-output-text {
+    font-size: 0.8em;
+  }
+
 }
 
 .console-input-text {
@@ -808,6 +854,14 @@ a.post-element {
   font-size: 1.2em;
 }
 
+@media (max-width: 550px) {
+
+  .console-input-text {
+    font-size: 0.8em;
+  }
+
+}
+
 .console-error-text {
   color: #ff6823;
   min-height: 1.2em;
@@ -815,6 +869,14 @@ a.post-element {
   font-family: 'Inconsolata', monospace;
   word-wrap: break-word;
   font-size: 1.2em;
+}
+
+@media (max-width: 550px) {
+
+  .console-error-text {
+    font-size: 0.8em;
+  }
+
 }
 
 .console-image {
@@ -855,6 +917,16 @@ a.post-element {
   outline: none;
   border: none;
   font-family: 'Inconsolata', monospace;
+}
+
+@media (max-width: 550px) {
+
+  
+  
+  .input-container input {
+    font-size: 0.8em;
+  }
+
 }
 
 #close-console-button {
