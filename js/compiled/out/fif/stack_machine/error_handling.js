@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.238 {}
+// Compiled by ClojureScript 1.10.339 {}
 goog.provide('fif.stack_machine.error_handling');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -8,8 +8,8 @@ fif.stack_machine.error_handling.error_symbol = new cljs.core.Symbol(null,"ERR##
  * Creates a new error object
  */
 fif.stack_machine.error_handling.new_error_object = (function fif$stack_machine$error_handling$new_error_object(var_args){
-var G__36983 = arguments.length;
-switch (G__36983) {
+var G__37094 = arguments.length;
+switch (G__37094) {
 case 2:
 return fif.stack_machine.error_handling.new_error_object.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -41,8 +41,8 @@ return cljs.core._EQ_.call(null,cljs.core.first.call(null,obj),fif.stack_machine
  * Creates an error object for stack errors.
  */
 fif.stack_machine.error_handling.stack_error = (function fif$stack_machine$error_handling$stack_error(var_args){
-var G__36986 = arguments.length;
-switch (G__36986) {
+var G__37097 = arguments.length;
+switch (G__37097) {
 case 3:
 return fif.stack_machine.error_handling.stack_error.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -72,19 +72,19 @@ fif.stack_machine.error_handling.stack_error.cljs$lang$maxFixedArity = 3;
  * Returns true if the given object is a stack error object
  */
 fif.stack_machine.error_handling.stack_error_object_QMARK_ = (function fif$stack_machine$error_handling$stack_error_object_QMARK_(obj){
-var and__3911__auto__ = fif.stack_machine.error_handling.error_object_QMARK_.call(null,obj);
-if(cljs.core.truth_(and__3911__auto__)){
+var and__3938__auto__ = fif.stack_machine.error_handling.error_object_QMARK_.call(null,obj);
+if(cljs.core.truth_(and__3938__auto__)){
 return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"type","type",1174270348).cljs$core$IFn$_invoke$arity$1(cljs.core.nth.call(null,obj,(2))),new cljs.core.Keyword("fif.stack-machine.error-handling","stack-error","fif.stack-machine.error-handling/stack-error",1141540237));
 } else {
-return and__3911__auto__;
+return and__3938__auto__;
 }
 });
 /**
  * Creates an error object for system errors.
  */
 fif.stack_machine.error_handling.system_error = (function fif$stack_machine$error_handling$system_error(var_args){
-var G__36989 = arguments.length;
-switch (G__36989) {
+var G__37100 = arguments.length;
+switch (G__37100) {
 case 4:
 return fif.stack_machine.error_handling.system_error.cljs$core$IFn$_invoke$arity$4((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]));
 
@@ -114,11 +114,11 @@ fif.stack_machine.error_handling.system_error.cljs$lang$maxFixedArity = 4;
  * Returns true if the given object is a system error object
  */
 fif.stack_machine.error_handling.system_error_object_QMARK_ = (function fif$stack_machine$error_handling$system_error_object_QMARK_(obj){
-var and__3911__auto__ = fif.stack_machine.error_handling.error_object_QMARK_.call(null,obj);
-if(cljs.core.truth_(and__3911__auto__)){
+var and__3938__auto__ = fif.stack_machine.error_handling.error_object_QMARK_.call(null,obj);
+if(cljs.core.truth_(and__3938__auto__)){
 return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"type","type",1174270348).cljs$core$IFn$_invoke$arity$1(cljs.core.nth.call(null,obj,(2))),new cljs.core.Keyword("fif.stack-machine.error-handling","system-error","fif.stack-machine.error-handling/system-error",2077074304));
 } else {
-return and__3911__auto__;
+return and__3938__auto__;
 }
 });
 /**

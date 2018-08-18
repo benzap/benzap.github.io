@@ -942,3 +942,52 @@ a.post-element {
 #close-console-button:hover {
   color: hsla(0, 0%, 100%, 0.7);
 }
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  margin: auto;
+}
+
+.tips .wallet {
+  display: flex;
+  width: 400px;
+  padding: 5px;
+}
+
+.tips .wallet .wallet-logo {
+  font-weight: bold;
+  font-family: 'Roboto', Sans-Serif;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.tips .wallet .wallet-address {
+  padding: 5px;
+  font-family: 'Inconsolata', monospace;
+}
+
+@media (max-width: 550px) {
+
+  .tips {
+    font-size: 0.8em;
+  }
+  
+  .tips .wallet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+  }
+  
+  .tips .wallet-logo {
+    text-align: center;
+    width: auto;
+  }
+
+}

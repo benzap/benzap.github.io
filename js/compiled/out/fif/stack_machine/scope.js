@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.238 {}
+// Compiled by ClojureScript 1.10.339 {}
 goog.provide('fif.stack_machine.scope');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -23,23 +23,23 @@ return fif.stack_machine.set_scope.call(null,sm,fif.utils.scope.new_scope.call(n
  * Update the current scope environment within the stack machine.
  */
 fif.stack_machine.scope.update_scope = (function fif$stack_machine$scope$update_scope(var_args){
-var args__4502__auto__ = [];
-var len__4499__auto___39620 = arguments.length;
-var i__4500__auto___39621 = (0);
+var args__4534__auto__ = [];
+var len__4531__auto___39731 = arguments.length;
+var i__4532__auto___39732 = (0);
 while(true){
-if((i__4500__auto___39621 < len__4499__auto___39620)){
-args__4502__auto__.push((arguments[i__4500__auto___39621]));
+if((i__4532__auto___39732 < len__4531__auto___39731)){
+args__4534__auto__.push((arguments[i__4532__auto___39732]));
 
-var G__39622 = (i__4500__auto___39621 + (1));
-i__4500__auto___39621 = G__39622;
+var G__39733 = (i__4532__auto___39732 + (1));
+i__4532__auto___39732 = G__39733;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__4503__auto__ = ((((2) < args__4502__auto__.length))?(new cljs.core.IndexedSeq(args__4502__auto__.slice((2)),(0),null)):null);
-return fif.stack_machine.scope.update_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4503__auto__);
+var argseq__4535__auto__ = ((((2) < args__4534__auto__.length))?(new cljs.core.IndexedSeq(args__4534__auto__.slice((2)),(0),null)):null);
+return fif.stack_machine.scope.update_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4535__auto__);
 });
 
 fif.stack_machine.scope.update_scope.cljs$core$IFn$_invoke$arity$variadic = (function (sm,f,args){
@@ -50,13 +50,13 @@ return fif.stack_machine.set_scope.call(null,sm,cljs.core.apply.call(null,fif.ut
 fif.stack_machine.scope.update_scope.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.stack_machine.scope.update_scope.cljs$lang$applyTo = (function (seq39617){
-var G__39618 = cljs.core.first.call(null,seq39617);
-var seq39617__$1 = cljs.core.next.call(null,seq39617);
-var G__39619 = cljs.core.first.call(null,seq39617__$1);
-var seq39617__$2 = cljs.core.next.call(null,seq39617__$1);
-var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39618,G__39619,seq39617__$2);
+fif.stack_machine.scope.update_scope.cljs$lang$applyTo = (function (seq39728){
+var G__39729 = cljs.core.first.call(null,seq39728);
+var seq39728__$1 = cljs.core.next.call(null,seq39728);
+var G__39730 = cljs.core.first.call(null,seq39728__$1);
+var seq39728__$2 = cljs.core.next.call(null,seq39728__$1);
+var self__4518__auto__ = this;
+return self__4518__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39729,G__39730,seq39728__$2);
 });
 
 /**
@@ -70,8 +70,8 @@ return fif.stack_machine.set_scope.call(null,sm,fif.utils.scope.remove_scope.cal
  * Retrieve within the latest scope, the given nested attribute.
  */
 fif.stack_machine.scope.get_in_scope = (function fif$stack_machine$scope$get_in_scope(var_args){
-var G__39624 = arguments.length;
-switch (G__39624) {
+var G__39735 = arguments.length;
+switch (G__39735) {
 case 3:
 return fif.stack_machine.scope.get_in_scope.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -101,23 +101,23 @@ fif.stack_machine.scope.get_in_scope.cljs$lang$maxFixedArity = 3;
  * Update the current scope environment within the stack machine.
  */
 fif.stack_machine.scope.update_global_scope = (function fif$stack_machine$scope$update_global_scope(var_args){
-var args__4502__auto__ = [];
-var len__4499__auto___39629 = arguments.length;
-var i__4500__auto___39630 = (0);
+var args__4534__auto__ = [];
+var len__4531__auto___39740 = arguments.length;
+var i__4532__auto___39741 = (0);
 while(true){
-if((i__4500__auto___39630 < len__4499__auto___39629)){
-args__4502__auto__.push((arguments[i__4500__auto___39630]));
+if((i__4532__auto___39741 < len__4531__auto___39740)){
+args__4534__auto__.push((arguments[i__4532__auto___39741]));
 
-var G__39631 = (i__4500__auto___39630 + (1));
-i__4500__auto___39630 = G__39631;
+var G__39742 = (i__4532__auto___39741 + (1));
+i__4532__auto___39741 = G__39742;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__4503__auto__ = ((((2) < args__4502__auto__.length))?(new cljs.core.IndexedSeq(args__4502__auto__.slice((2)),(0),null)):null);
-return fif.stack_machine.scope.update_global_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4503__auto__);
+var argseq__4535__auto__ = ((((2) < args__4534__auto__.length))?(new cljs.core.IndexedSeq(args__4534__auto__.slice((2)),(0),null)):null);
+return fif.stack_machine.scope.update_global_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4535__auto__);
 });
 
 fif.stack_machine.scope.update_global_scope.cljs$core$IFn$_invoke$arity$variadic = (function (sm,f,args){
@@ -128,21 +128,21 @@ return fif.stack_machine.set_scope.call(null,sm,cljs.core.apply.call(null,fif.ut
 fif.stack_machine.scope.update_global_scope.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.stack_machine.scope.update_global_scope.cljs$lang$applyTo = (function (seq39626){
-var G__39627 = cljs.core.first.call(null,seq39626);
-var seq39626__$1 = cljs.core.next.call(null,seq39626);
-var G__39628 = cljs.core.first.call(null,seq39626__$1);
-var seq39626__$2 = cljs.core.next.call(null,seq39626__$1);
-var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39627,G__39628,seq39626__$2);
+fif.stack_machine.scope.update_global_scope.cljs$lang$applyTo = (function (seq39737){
+var G__39738 = cljs.core.first.call(null,seq39737);
+var seq39737__$1 = cljs.core.next.call(null,seq39737);
+var G__39739 = cljs.core.first.call(null,seq39737__$1);
+var seq39737__$2 = cljs.core.next.call(null,seq39737__$1);
+var self__4518__auto__ = this;
+return self__4518__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39738,G__39739,seq39737__$2);
 });
 
 /**
  * Retrieves from the earliest scope
  */
 fif.stack_machine.scope.get_in_global_scope = (function fif$stack_machine$scope$get_in_global_scope(var_args){
-var G__39633 = arguments.length;
-switch (G__39633) {
+var G__39744 = arguments.length;
+switch (G__39744) {
 case 3:
 return fif.stack_machine.scope.get_in_global_scope.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 

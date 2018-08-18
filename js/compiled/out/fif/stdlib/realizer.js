@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.238 {}
+// Compiled by ClojureScript 1.10.339 {}
 goog.provide('fif.stdlib.realizer');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -18,23 +18,23 @@ return fif.stack_machine.mode.enter_mode.call(null,sm,fif.stdlib.realizer.realiz
 fif.stdlib.realizer.exit_realize_mode = (function fif$stdlib$realizer$exit_realize_mode(sm){
 return fif.stack_machine.mode.exit_mode.call(null,sm);
 });
-if(typeof fif.stdlib.realizer.realize_mode !== 'undefined'){
+if((typeof fif !== 'undefined') && (typeof fif.stdlib !== 'undefined') && (typeof fif.stdlib.realizer !== 'undefined') && (typeof fif.stdlib.realizer.realize_mode !== 'undefined')){
 } else {
-fif.stdlib.realizer.realize_mode = (function (){var method_table__4382__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var prefer_table__4383__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var method_cache__4384__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var cached_hierarchy__4385__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__4386__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
-return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"fif.stdlib.realizer","realize-mode"),fif.stack_machine.mode.mode_dispatch_fn,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__4386__auto__,method_table__4382__auto__,prefer_table__4383__auto__,method_cache__4384__auto__,cached_hierarchy__4385__auto__));
+fif.stdlib.realizer.realize_mode = (function (){var method_table__4414__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var prefer_table__4415__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var method_cache__4416__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var cached_hierarchy__4417__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var hierarchy__4418__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
+return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"fif.stdlib.realizer","realize-mode"),fif.stack_machine.mode.mode_dispatch_fn,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__4418__auto__,method_table__4414__auto__,prefer_table__4415__auto__,method_cache__4416__auto__,cached_hierarchy__4417__auto__));
 })();
 }
 cljs.core._add_method.call(null,fif.stdlib.realizer.realize_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.realizer","?","fif.stdlib.realizer/?",-246752758),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","init","fif.stdlib.realizer/init",-395491993)], null),(function (sm){
-var vec__39735 = fif.stack_machine.get_stack.call(null,sm);
-var collection = cljs.core.nth.call(null,vec__39735,(0),null);
-return fif.stack_machine.update_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.realizer","collection-type","fif.stdlib.realizer/collection-type",1108804159),cljs.core.empty.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","collect","fif.stdlib.realizer/collect",-1810320850)))),fif.stdlib.realizer.arg_realize_start_token),((function (vec__39735,collection){
-return (function (p1__39734_SHARP_,p2__39732_SHARP_,p3__39733_SHARP_){
-return cljs.core.concat.call(null,p2__39732_SHARP_,p3__39733_SHARP_,p1__39734_SHARP_);
-});})(vec__39735,collection))
+var vec__39846 = fif.stack_machine.get_stack.call(null,sm);
+var collection = cljs.core.nth.call(null,vec__39846,(0),null);
+return fif.stack_machine.update_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.realizer","collection-type","fif.stdlib.realizer/collection-type",1108804159),cljs.core.empty.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","collect","fif.stdlib.realizer/collect",-1810320850)))),fif.stdlib.realizer.arg_realize_start_token),((function (vec__39846,collection){
+return (function (p1__39845_SHARP_,p2__39843_SHARP_,p3__39844_SHARP_){
+return cljs.core.concat.call(null,p2__39843_SHARP_,p3__39844_SHARP_,p1__39845_SHARP_);
+});})(vec__39846,collection))
 ,collection,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [fif.stdlib.realizer.arg_realize_finish_token], null));
 }));
 cljs.core._add_method.call(null,fif.stdlib.realizer.realize_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.realizer","?","fif.stdlib.realizer/?",-246752758),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","collect","fif.stdlib.realizer/collect",-1810320850)], null),(function (sm){
@@ -48,9 +48,9 @@ return fif.stack_machine.processor.process_arg.call(null,sm);
 }));
 cljs.core._add_method.call(null,fif.stdlib.realizer.realize_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.realizer","?","fif.stdlib.realizer/?",-246752758),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","finish","fif.stdlib.realizer/finish",592507797)], null),(function (sm){
 var coll_type = new cljs.core.Keyword("fif.stdlib.realizer","collection-type","fif.stdlib.realizer/collection-type",1108804159).cljs$core$IFn$_invoke$arity$1(fif.stack_machine.stash.peek_stash.call(null,sm));
-var vec__39738 = fif.utils.token.split_at_token.call(null,fif.stack_machine.get_stack.call(null,sm),fif.stdlib.realizer.arg_realize_start_token);
-var realized_collection = cljs.core.nth.call(null,vec__39738,(0),null);
-var new_stack = cljs.core.nth.call(null,vec__39738,(1),null);
+var vec__39849 = fif.utils.token.split_at_token.call(null,fif.stack_machine.get_stack.call(null,sm),fif.stdlib.realizer.arg_realize_start_token);
+var realized_collection = cljs.core.nth.call(null,vec__39849,(0),null);
+var new_stack = cljs.core.nth.call(null,vec__39849,(1),null);
 var realized_collection__$1 = cljs.core.into.call(null,coll_type,cljs.core.reverse.call(null,realized_collection));
 var realized_collection__$2 = ((cljs.core.seq_QMARK_.call(null,realized_collection__$1))?cljs.core.reverse.call(null,realized_collection__$1):realized_collection__$1);
 return fif.stack_machine.dequeue_code.call(null,fif.stdlib.realizer.exit_realize_mode.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.set_stack.call(null,sm,new_stack),realized_collection__$2)));

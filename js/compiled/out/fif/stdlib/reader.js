@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.238 {}
+// Compiled by ClojureScript 1.10.339 {}
 goog.provide('fif.stdlib.reader');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -6,11 +6,11 @@ goog.require('fif.stack_machine.evaluators');
 goog.require('fif.stack_machine.words');
 goog.require('fif.def');
 fif.stdlib.reader.read_string_op = (function fif$stdlib$reader$read_string_op(sm){
-var vec__41176 = fif.stack_machine.get_stack.call(null,sm);
-var s = cljs.core.nth.call(null,vec__41176,(0),null);
-var vec__41179 = fif.stack_machine.evaluators.read_string.call(null,sm,s);
-var sm__$1 = cljs.core.nth.call(null,vec__41179,(0),null);
-var fif_forms = cljs.core.nth.call(null,vec__41179,(1),null);
+var vec__41287 = fif.stack_machine.get_stack.call(null,sm);
+var s = cljs.core.nth.call(null,vec__41287,(0),null);
+var vec__41290 = fif.stack_machine.evaluators.read_string.call(null,sm,s);
+var sm__$1 = cljs.core.nth.call(null,vec__41290,(0),null);
+var fif_forms = cljs.core.nth.call(null,vec__41290,(1),null);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,sm__$1),fif_forms));
 });
 fif.stdlib.reader.import_stdlib_reader = (function fif$stdlib$reader$import_stdlib_reader(sm){

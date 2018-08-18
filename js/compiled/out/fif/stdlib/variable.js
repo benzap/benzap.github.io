@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.238 {}
+// Compiled by ClojureScript 1.10.339 {}
 goog.provide('fif.stdlib.variable');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -17,14 +17,14 @@ return fif.stack_machine.mode.enter_mode.call(null,sm,fif.stdlib.variable.variab
 fif.stdlib.variable.exit_variable_mode = (function fif$stdlib$variable$exit_variable_mode(sm){
 return fif.stack_machine.mode.exit_mode.call(null,sm);
 });
-if(typeof fif.stdlib.variable.variable_mode !== 'undefined'){
+if((typeof fif !== 'undefined') && (typeof fif.stdlib !== 'undefined') && (typeof fif.stdlib.variable !== 'undefined') && (typeof fif.stdlib.variable.variable_mode !== 'undefined')){
 } else {
-fif.stdlib.variable.variable_mode = (function (){var method_table__4382__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var prefer_table__4383__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var method_cache__4384__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var cached_hierarchy__4385__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__4386__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
-return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"fif.stdlib.variable","variable-mode"),fif.stack_machine.mode.mode_dispatch_fn,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__4386__auto__,method_table__4382__auto__,prefer_table__4383__auto__,method_cache__4384__auto__,cached_hierarchy__4385__auto__));
+fif.stdlib.variable.variable_mode = (function (){var method_table__4414__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var prefer_table__4415__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var method_cache__4416__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var cached_hierarchy__4417__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var hierarchy__4418__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
+return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"fif.stdlib.variable","variable-mode"),fif.stack_machine.mode.mode_dispatch_fn,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__4418__auto__,method_table__4414__auto__,prefer_table__4415__auto__,method_cache__4416__auto__,cached_hierarchy__4417__auto__));
 })();
 }
 /**
@@ -80,9 +80,9 @@ return fif.stack_machine.dequeue_code.call(null,fif.stdlib.variable.exit_variabl
  * Word function used to set a global variable to a provided value
  */
 fif.stdlib.variable.setg = (function fif$stdlib$variable$setg(sm){
-var vec__39749 = fif.stack_machine.get_stack.call(null,sm);
-var val = cljs.core.nth.call(null,vec__39749,(0),null);
-var sym = cljs.core.nth.call(null,vec__39749,(1),null);
+var vec__39860 = fif.stack_machine.get_stack.call(null,sm);
+var val = cljs.core.nth.call(null,vec__39860,(0),null);
+var sym = cljs.core.nth.call(null,vec__39860,(1),null);
 if(!((sym instanceof cljs.core.Symbol))){
 return fif.stack_machine.exceptions.raise_validation_error.call(null,sm,(1),sym,"Variable name must be a symbol");
 } else {
@@ -98,9 +98,9 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.words.set_glob
  * Word function used to set a local variable to a provided value
  */
 fif.stdlib.variable.setl = (function fif$stdlib$variable$setl(sm){
-var vec__39752 = fif.stack_machine.get_stack.call(null,sm);
-var val = cljs.core.nth.call(null,vec__39752,(0),null);
-var sym = cljs.core.nth.call(null,vec__39752,(1),null);
+var vec__39863 = fif.stack_machine.get_stack.call(null,sm);
+var val = cljs.core.nth.call(null,vec__39863,(0),null);
+var sym = cljs.core.nth.call(null,vec__39863,(1),null);
 if(!((sym instanceof cljs.core.Symbol))){
 return fif.stack_machine.exceptions.raise_validation_error.call(null,sm,(1),sym,"Variable name must be a symbol");
 } else {

@@ -1,9 +1,9 @@
-// Compiled by ClojureScript 1.10.238 {}
+// Compiled by ClojureScript 1.10.339 {}
 goog.provide('fif.utils.scope');
 goog.require('cljs.core');
 fif.utils.scope.new_scope = (function fif$utils$scope$new_scope(var_args){
-var G__39596 = arguments.length;
-switch (G__39596) {
+var G__39707 = arguments.length;
+switch (G__39707) {
 case 1:
 return fif.utils.scope.new_scope.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -29,23 +29,23 @@ return fif.utils.scope.new_scope.call(null,cljs.core.PersistentVector.EMPTY);
 fif.utils.scope.new_scope.cljs$lang$maxFixedArity = 1;
 
 fif.utils.scope.update_scope = (function fif$utils$scope$update_scope(var_args){
-var args__4502__auto__ = [];
-var len__4499__auto___39601 = arguments.length;
-var i__4500__auto___39602 = (0);
+var args__4534__auto__ = [];
+var len__4531__auto___39712 = arguments.length;
+var i__4532__auto___39713 = (0);
 while(true){
-if((i__4500__auto___39602 < len__4499__auto___39601)){
-args__4502__auto__.push((arguments[i__4500__auto___39602]));
+if((i__4532__auto___39713 < len__4531__auto___39712)){
+args__4534__auto__.push((arguments[i__4532__auto___39713]));
 
-var G__39603 = (i__4500__auto___39602 + (1));
-i__4500__auto___39602 = G__39603;
+var G__39714 = (i__4532__auto___39713 + (1));
+i__4532__auto___39713 = G__39714;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__4503__auto__ = ((((2) < args__4502__auto__.length))?(new cljs.core.IndexedSeq(args__4502__auto__.slice((2)),(0),null)):null);
-return fif.utils.scope.update_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4503__auto__);
+var argseq__4535__auto__ = ((((2) < args__4534__auto__.length))?(new cljs.core.IndexedSeq(args__4534__auto__.slice((2)),(0),null)):null);
+return fif.utils.scope.update_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4535__auto__);
 });
 
 fif.utils.scope.update_scope.cljs$core$IFn$_invoke$arity$variadic = (function (scope,f,args){
@@ -55,13 +55,13 @@ return cljs.core.apply.call(null,cljs.core.update_in,scope,new cljs.core.Persist
 fif.utils.scope.update_scope.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.utils.scope.update_scope.cljs$lang$applyTo = (function (seq39598){
-var G__39599 = cljs.core.first.call(null,seq39598);
-var seq39598__$1 = cljs.core.next.call(null,seq39598);
-var G__39600 = cljs.core.first.call(null,seq39598__$1);
-var seq39598__$2 = cljs.core.next.call(null,seq39598__$1);
-var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39599,G__39600,seq39598__$2);
+fif.utils.scope.update_scope.cljs$lang$applyTo = (function (seq39709){
+var G__39710 = cljs.core.first.call(null,seq39709);
+var seq39709__$1 = cljs.core.next.call(null,seq39709);
+var G__39711 = cljs.core.first.call(null,seq39709__$1);
+var seq39709__$2 = cljs.core.next.call(null,seq39709__$1);
+var self__4518__auto__ = this;
+return self__4518__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39710,G__39711,seq39709__$2);
 });
 
 fif.utils.scope.remove_scope = (function fif$utils$scope$remove_scope(scope){
@@ -69,8 +69,8 @@ return cljs.core.pop.call(null,scope);
 });
 fif.utils.scope.not_found = new cljs.core.Keyword("fif.utils.scope","miss","fif.utils.scope/miss",1949290218);
 fif.utils.scope.get_in_scope = (function fif$utils$scope$get_in_scope(var_args){
-var G__39607 = arguments.length;
-switch (G__39607) {
+var G__39718 = arguments.length;
+switch (G__39718) {
 case 3:
 return fif.utils.scope.get_in_scope.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -88,13 +88,13 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 fif.utils.scope.get_in_scope.cljs$core$IFn$_invoke$arity$3 = (function (scope,attrs,default$){
 var $ = scope;
 var $__$1 = cljs.core.map.call(null,((function ($){
-return (function (p1__39604_SHARP_){
-return cljs.core.get_in.call(null,p1__39604_SHARP_,attrs,fif.utils.scope.not_found);
+return (function (p1__39715_SHARP_){
+return cljs.core.get_in.call(null,p1__39715_SHARP_,attrs,fif.utils.scope.not_found);
 });})($))
 ,$);
 var $__$2 = cljs.core.filter.call(null,((function ($,$__$1){
-return (function (p1__39605_SHARP_){
-return cljs.core.not_EQ_.call(null,p1__39605_SHARP_,fif.utils.scope.not_found);
+return (function (p1__39716_SHARP_){
+return cljs.core.not_EQ_.call(null,p1__39716_SHARP_,fif.utils.scope.not_found);
 });})($,$__$1))
 ,$__$1);
 var $__$3 = cljs.core.reverse.call(null,$__$2);
@@ -112,23 +112,23 @@ return fif.utils.scope.get_in_scope.call(null,scope,attrs,null);
 fif.utils.scope.get_in_scope.cljs$lang$maxFixedArity = 3;
 
 fif.utils.scope.update_global_scope = (function fif$utils$scope$update_global_scope(var_args){
-var args__4502__auto__ = [];
-var len__4499__auto___39612 = arguments.length;
-var i__4500__auto___39613 = (0);
+var args__4534__auto__ = [];
+var len__4531__auto___39723 = arguments.length;
+var i__4532__auto___39724 = (0);
 while(true){
-if((i__4500__auto___39613 < len__4499__auto___39612)){
-args__4502__auto__.push((arguments[i__4500__auto___39613]));
+if((i__4532__auto___39724 < len__4531__auto___39723)){
+args__4534__auto__.push((arguments[i__4532__auto___39724]));
 
-var G__39614 = (i__4500__auto___39613 + (1));
-i__4500__auto___39613 = G__39614;
+var G__39725 = (i__4532__auto___39724 + (1));
+i__4532__auto___39724 = G__39725;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__4503__auto__ = ((((2) < args__4502__auto__.length))?(new cljs.core.IndexedSeq(args__4502__auto__.slice((2)),(0),null)):null);
-return fif.utils.scope.update_global_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4503__auto__);
+var argseq__4535__auto__ = ((((2) < args__4534__auto__.length))?(new cljs.core.IndexedSeq(args__4534__auto__.slice((2)),(0),null)):null);
+return fif.utils.scope.update_global_scope.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4535__auto__);
 });
 
 fif.utils.scope.update_global_scope.cljs$core$IFn$_invoke$arity$variadic = (function (scope,f,args){
@@ -138,13 +138,13 @@ return cljs.core.apply.call(null,cljs.core.update_in,scope,new cljs.core.Persist
 fif.utils.scope.update_global_scope.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.utils.scope.update_global_scope.cljs$lang$applyTo = (function (seq39609){
-var G__39610 = cljs.core.first.call(null,seq39609);
-var seq39609__$1 = cljs.core.next.call(null,seq39609);
-var G__39611 = cljs.core.first.call(null,seq39609__$1);
-var seq39609__$2 = cljs.core.next.call(null,seq39609__$1);
-var self__4486__auto__ = this;
-return self__4486__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39610,G__39611,seq39609__$2);
+fif.utils.scope.update_global_scope.cljs$lang$applyTo = (function (seq39720){
+var G__39721 = cljs.core.first.call(null,seq39720);
+var seq39720__$1 = cljs.core.next.call(null,seq39720);
+var G__39722 = cljs.core.first.call(null,seq39720__$1);
+var seq39720__$2 = cljs.core.next.call(null,seq39720__$1);
+var self__4518__auto__ = this;
+return self__4518__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39721,G__39722,seq39720__$2);
 });
 
 fif.utils.scope.get_merged_scope = (function fif$utils$scope$get_merged_scope(scope){
