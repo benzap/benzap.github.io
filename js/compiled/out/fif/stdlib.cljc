@@ -12,10 +12,12 @@
    [fif.stdlib.collection-ops :refer [import-stdlib-collection-ops]]
    [fif.stdlib.functional-ops :refer [import-stdlib-functional-ops]]
    [fif.stdlib.realizer :refer [import-stdlib-realize-mode]]
+   [fif.stdlib.realizer.multi :refer [import-stdlib-realize-multi-mode]]
    [fif.stdlib.tools :refer [import-stdlib-stack-tools]]
    [fif.stdlib.repl :refer [import-stdlib-repl]]
    [fif.stdlib.reader :refer [import-stdlib-reader]]
    [fif.stdlib.type-checking :refer [import-stdlib-type-checking]]
+   [fif.stdlib.piecewise :refer [import-stdlib-piecewise]]
    [fif.stdlib.help :refer [import-stdlib-help]]))
 
 
@@ -32,10 +34,12 @@
       import-stdlib-collection-ops
       import-stdlib-functional-ops
       import-stdlib-realize-mode
+      ;;import-stdlib-realize-multi-mode
       import-stdlib-stack-tools
       import-stdlib-repl
       import-stdlib-reader
       import-stdlib-type-checking
+      import-stdlib-piecewise
       import-stdlib-help))
 
 

@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.339 {}
+// Compiled by ClojureScript 1.10.439 {}
 goog.provide('fif.stdlib.collection_ops');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -15,22 +15,24 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  *   the two elements on the main stack.
  */
 fif.stdlib.collection_ops.op_unpair = (function fif$stdlib$collection_ops$op_unpair(sm){
-var vec__40009 = fif.stack_machine.get_stack.call(null,sm);
-var x = cljs.core.nth.call(null,vec__40009,(0),null);
+var vec__40831 = fif.stack_machine.get_stack.call(null,sm);
+var x = cljs.core.nth.call(null,vec__40831,(0),null);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,sm),cljs.core.first.call(null,x)),cljs.core.second.call(null,x)));
 });
 /**
  * Takes the top value, which is a collection of values, and places them
- *   at the front of the code queue.
+ *   at the front of the code queue. Places any non-collection values on
+ *   the code queue.
  */
 fif.stdlib.collection_ops.apply_op = (function fif$stdlib$collection_ops$apply_op(sm){
-var vec__40014 = fif.stack_machine.get_stack.call(null,sm);
-var coll = cljs.core.nth.call(null,vec__40014,(0),null);
-return fif.stack_machine.update_code.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,sm)),((function (vec__40014,coll){
-return (function (p1__40013_SHARP_,p2__40012_SHARP_){
-return cljs.core.concat.call(null,p2__40012_SHARP_,p1__40013_SHARP_);
-});})(vec__40014,coll))
-,coll);
+var vec__40836 = fif.stack_machine.get_stack.call(null,sm);
+var coll = cljs.core.nth.call(null,vec__40836,(0),null);
+var coll__$1 = ((cljs.core.coll_QMARK_.call(null,coll))?coll:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [coll], null));
+return fif.stack_machine.update_code.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,sm)),((function (vec__40836,coll,coll__$1){
+return (function (p1__40835_SHARP_,p2__40834_SHARP_){
+return cljs.core.concat.call(null,p2__40834_SHARP_,p1__40835_SHARP_);
+});})(vec__40836,coll,coll__$1))
+,coll__$1);
 });
 /**
  * Imports the collection operators as part of the standard library.

@@ -1,1 +1,1 @@
-{:output-wrapper false, :output-to "../dist_website/js/compiled/website.js", :externs ["closure-js/externs"], :libs ["closure-js/libs"], :main website.core, :output-dir "../dist_website/js/compiled/out", :source-map-timestamp true, :optimizations :simple, :pretty-print false}
+{:output-dir "../dist_website/js/compiled/out", :externs ["closure-js/externs"], :optimizations :simple, :output-to "../dist_website/js/compiled/website.js", :source-map-timestamp true, :output-wrapper false, :libs ["closure-js/libs"], :main website.core, :pretty-print false}

@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.339 {}
+// Compiled by ClojureScript 1.10.439 {}
 goog.provide('fif.stack_machine.stash');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -20,8 +20,8 @@ return fif.stack_machine.set_mode_stash.call(null,sm,stack);
  * Initialize a new stack-machine stash, or replace it with 
  */
 fif.stack_machine.stash.new_stash = (function fif$stack_machine$stash$new_stash(var_args){
-var G__39822 = arguments.length;
-switch (G__39822) {
+var G__36635 = arguments.length;
+switch (G__36635) {
 case 2:
 return fif.stack_machine.stash.new_stash.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -51,23 +51,23 @@ fif.stack_machine.stash.clear_stash = (function fif$stack_machine$stash$clear_st
 return fif.stack_machine.stash.set_stash.call(null,sm,fif.utils.stash.create_stash.call(null));
 });
 fif.stack_machine.stash.update_stash = (function fif$stack_machine$stash$update_stash(var_args){
-var args__4534__auto__ = [];
-var len__4531__auto___39827 = arguments.length;
-var i__4532__auto___39828 = (0);
+var args__4647__auto__ = [];
+var len__4641__auto___36640 = arguments.length;
+var i__4642__auto___36641 = (0);
 while(true){
-if((i__4532__auto___39828 < len__4531__auto___39827)){
-args__4534__auto__.push((arguments[i__4532__auto___39828]));
+if((i__4642__auto___36641 < len__4641__auto___36640)){
+args__4647__auto__.push((arguments[i__4642__auto___36641]));
 
-var G__39829 = (i__4532__auto___39828 + (1));
-i__4532__auto___39828 = G__39829;
+var G__36642 = (i__4642__auto___36641 + (1));
+i__4642__auto___36641 = G__36642;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__4535__auto__ = ((((2) < args__4534__auto__.length))?(new cljs.core.IndexedSeq(args__4534__auto__.slice((2)),(0),null)):null);
-return fif.stack_machine.stash.update_stash.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4535__auto__);
+var argseq__4648__auto__ = ((((2) < args__4647__auto__.length))?(new cljs.core.IndexedSeq(args__4647__auto__.slice((2)),(0),null)):null);
+return fif.stack_machine.stash.update_stash.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4648__auto__);
 });
 
 fif.stack_machine.stash.update_stash.cljs$core$IFn$_invoke$arity$variadic = (function (sm,f,args){
@@ -78,13 +78,13 @@ return fif.stack_machine.stash.set_stash.call(null,sm,cljs.core.apply.call(null,
 fif.stack_machine.stash.update_stash.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.stack_machine.stash.update_stash.cljs$lang$applyTo = (function (seq39824){
-var G__39825 = cljs.core.first.call(null,seq39824);
-var seq39824__$1 = cljs.core.next.call(null,seq39824);
-var G__39826 = cljs.core.first.call(null,seq39824__$1);
-var seq39824__$2 = cljs.core.next.call(null,seq39824__$1);
-var self__4518__auto__ = this;
-return self__4518__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39825,G__39826,seq39824__$2);
+fif.stack_machine.stash.update_stash.cljs$lang$applyTo = (function (seq36637){
+var G__36638 = cljs.core.first.call(null,seq36637);
+var seq36637__$1 = cljs.core.next.call(null,seq36637);
+var G__36639 = cljs.core.first.call(null,seq36637__$1);
+var seq36637__$2 = cljs.core.next.call(null,seq36637__$1);
+var self__4628__auto__ = this;
+return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__36638,G__36639,seq36637__$2);
 });
 
 fif.stack_machine.stash.remove_stash = (function fif$stack_machine$stash$remove_stash(sm){

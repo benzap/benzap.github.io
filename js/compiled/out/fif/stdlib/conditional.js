@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.339 {}
+// Compiled by ClojureScript 1.10.439 {}
 goog.provide('fif.stdlib.conditional');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -171,11 +171,11 @@ if(cljs.core._EQ_.call(null,arg,fif.stdlib.conditional.arg_if_token)){
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stash.call(null,fif.stack_machine.push_flag.call(null,sm,fif.stdlib.conditional.inner_conditional_flag),fif.stack_machine.sub_stack.push_sub_stack.call(null,stash,arg)));
 } else {
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.conditional.arg_then_token)){
-var vec__39941 = fif.stack_machine.get_stack.call(null,sm);
-var flag = cljs.core.nth.call(null,vec__39941,(0),null);
+var vec__36596 = fif.stack_machine.get_stack.call(null,sm);
+var flag = cljs.core.nth.call(null,vec__36596,(0),null);
 var condition_body = fif.stack_machine.sub_stack.get_sub_stack.call(null,stash);
 var new_code = cljs.core.concat.call(null,cljs.core.reverse.call(null,condition_body),(new cljs.core.List(null,fif.stdlib.conditional.arg_then_token,null,(1),null)),fif.stack_machine.get_code.call(null,fif.stack_machine.dequeue_code.call(null,sm)));
-if(cljs.core.truth_(fif.stdlib.conditional.condition_true_QMARK_.call(null,flag))){
+if(fif.stdlib.conditional.condition_true_QMARK_.call(null,flag)){
 return fif.stack_machine.set_stash.call(null,fif.stack_machine.set_code.call(null,fif.stack_machine.push_flag.call(null,fif.stack_machine.pop_flag.call(null,fif.stack_machine.pop_stack.call(null,sm)),fif.stdlib.conditional.truth_condition_mode_flag),new_code),fif.stack_machine.sub_stack.remove_sub_stack.call(null,stash));
 } else {
 return fif.stack_machine.set_stash.call(null,fif.stack_machine.set_code.call(null,fif.stack_machine.push_flag.call(null,fif.stack_machine.pop_flag.call(null,fif.stack_machine.pop_stack.call(null,sm)),fif.stdlib.conditional.dump_truth_condition_mode_flag),new_code),fif.stack_machine.sub_stack.remove_sub_stack.call(null,stash));
