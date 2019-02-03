@@ -9,8 +9,8 @@ var init_stash = cljs.core.assoc.call(null,fif.stack_machine.mode.default_mode_s
 return fif.stack_machine.stash.new_stash.call(null,sm,init_stash);
 });
 fif.stack_machine.mode.enter_mode = (function fif$stack_machine$mode$enter_mode(var_args){
-var G__36657 = arguments.length;
-switch (G__36657) {
+var G__32143 = arguments.length;
+switch (G__32143) {
 case 3:
 return fif.stack_machine.mode.enter_mode.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -43,14 +43,14 @@ return fif.stack_machine.stash.update_stash.call(null,cljs.core.assoc,new cljs.c
 });
 fif.stack_machine.mode.update_state = (function fif$stack_machine$mode$update_state(var_args){
 var args__4647__auto__ = [];
-var len__4641__auto___36662 = arguments.length;
-var i__4642__auto___36663 = (0);
+var len__4641__auto___32148 = arguments.length;
+var i__4642__auto___32149 = (0);
 while(true){
-if((i__4642__auto___36663 < len__4641__auto___36662)){
-args__4647__auto__.push((arguments[i__4642__auto___36663]));
+if((i__4642__auto___32149 < len__4641__auto___32148)){
+args__4647__auto__.push((arguments[i__4642__auto___32149]));
 
-var G__36664 = (i__4642__auto___36663 + (1));
-i__4642__auto___36663 = G__36664;
+var G__32150 = (i__4642__auto___32149 + (1));
+i__4642__auto___32149 = G__32150;
 continue;
 } else {
 }
@@ -68,13 +68,13 @@ return cljs.core.apply.call(null,fif.stack_machine.stash.update_stash,sm,cljs.co
 fif.stack_machine.mode.update_state.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.stack_machine.mode.update_state.cljs$lang$applyTo = (function (seq36659){
-var G__36660 = cljs.core.first.call(null,seq36659);
-var seq36659__$1 = cljs.core.next.call(null,seq36659);
-var G__36661 = cljs.core.first.call(null,seq36659__$1);
-var seq36659__$2 = cljs.core.next.call(null,seq36659__$1);
+fif.stack_machine.mode.update_state.cljs$lang$applyTo = (function (seq32145){
+var G__32146 = cljs.core.first.call(null,seq32145);
+var seq32145__$1 = cljs.core.next.call(null,seq32145);
+var G__32147 = cljs.core.first.call(null,seq32145__$1);
+var seq32145__$2 = cljs.core.next.call(null,seq32145__$1);
 var self__4628__auto__ = this;
-return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__36660,G__36661,seq36659__$2);
+return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__32146,G__32147,seq32145__$2);
 });
 
 fif.stack_machine.mode.update_stash = fif.stack_machine.stash.update_stash;

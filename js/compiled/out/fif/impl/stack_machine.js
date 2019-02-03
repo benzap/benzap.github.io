@@ -60,12 +60,12 @@ var this__4301__auto____$1 = this;
 return this__4301__auto____$1.cljs$core$ILookup$_lookup$arity$3(null,k__4302__auto__,null);
 });
 
-fif.impl.stack_machine.StackMachine.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__4303__auto__,k42273,else__4304__auto__){
+fif.impl.stack_machine.StackMachine.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__4303__auto__,k34296,else__4304__auto__){
 var self__ = this;
 var this__4303__auto____$1 = this;
-var G__42277 = k42273;
-var G__42277__$1 = (((G__42277 instanceof cljs.core.Keyword))?G__42277.fqn:null);
-switch (G__42277__$1) {
+var G__34300 = k34296;
+var G__34300__$1 = (((G__34300 instanceof cljs.core.Keyword))?G__34300.fqn:null);
+switch (G__34300__$1) {
 case "arg-stack":
 return self__.arg_stack;
 
@@ -127,7 +127,7 @@ return self__.debug_QMARK_;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k42273,else__4304__auto__);
+return cljs.core.get.call(null,self__.__extmap,k34296,else__4304__auto__);
 
 }
 });
@@ -136,10 +136,10 @@ fif.impl.stack_machine.StackMachine.prototype.cljs$core$IKVReduce$_kv_reduce$ari
 var self__ = this;
 var this__4320__auto____$1 = this;
 return cljs.core.reduce.call(null,((function (this__4320__auto____$1){
-return (function (ret__4323__auto__,p__42278){
-var vec__42279 = p__42278;
-var k__4324__auto__ = cljs.core.nth.call(null,vec__42279,(0),null);
-var v__4325__auto__ = cljs.core.nth.call(null,vec__42279,(1),null);
+return (function (ret__4323__auto__,p__34301){
+var vec__34302 = p__34301;
+var k__4324__auto__ = cljs.core.nth.call(null,vec__34302,(0),null);
+var v__4325__auto__ = cljs.core.nth.call(null,vec__34302,(1),null);
 return f__4321__auto__.call(null,ret__4323__auto__,k__4324__auto__,v__4325__auto__);
 });})(this__4320__auto____$1))
 ,init__4322__auto__,this__4320__auto____$1);
@@ -156,10 +156,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__4316__auto__,cljs.core.p
 return cljs.core.pr_sequential_writer.call(null,writer__4316__auto__,pr_pair__4318__auto__,"#fif.impl.stack-machine.StackMachine{",", ","}",opts__4317__auto__,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),self__.arg_stack],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),self__.code_stack],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),self__.ret_stack],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),self__.temp_macro_stack],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"scope","scope",-439358418),self__.scope],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),self__.sub_stash],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),self__.mode_stash],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"flags","flags",1775418075),self__.flags],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"modes","modes",-1377787092),self__.modes],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"step-num","step-num",-1199653885),self__.step_num],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"step-max","step-max",-2042341837),self__.step_max],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),self__.system_error_handler],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),self__.stack_error_handler],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"halt?","halt?",-1110658247),self__.halt_QMARK_],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"debug?","debug?",-1831756173),self__.debug_QMARK_],null))], null),self__.__extmap));
 });
 
-fif.impl.stack_machine.StackMachine.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__42272){
+fif.impl.stack_machine.StackMachine.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__34295){
 var self__ = this;
-var G__42272__$1 = this;
-return (new cljs.core.RecordIter((0),G__42272__$1,15,new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),new cljs.core.Keyword(null,"scope","scope",-439358418),new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),new cljs.core.Keyword(null,"flags","flags",1775418075),new cljs.core.Keyword(null,"modes","modes",-1377787092),new cljs.core.Keyword(null,"step-num","step-num",-1199653885),new cljs.core.Keyword(null,"step-max","step-max",-2042341837),new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),new cljs.core.Keyword(null,"halt?","halt?",-1110658247),new cljs.core.Keyword(null,"debug?","debug?",-1831756173)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__34295__$1 = this;
+return (new cljs.core.RecordIter((0),G__34295__$1,15,new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),new cljs.core.Keyword(null,"scope","scope",-439358418),new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),new cljs.core.Keyword(null,"flags","flags",1775418075),new cljs.core.Keyword(null,"modes","modes",-1377787092),new cljs.core.Keyword(null,"step-num","step-num",-1199653885),new cljs.core.Keyword(null,"step-max","step-max",-2042341837),new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),new cljs.core.Keyword(null,"halt?","halt?",-1110658247),new cljs.core.Keyword(null,"debug?","debug?",-1831756173)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 fif.impl.stack_machine.StackMachine.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__4299__auto__){
@@ -198,10 +198,10 @@ return h__4159__auto____$1;
 }
 });
 
-fif.impl.stack_machine.StackMachine.prototype.cljs$core$IEquiv$_equiv$arity$2 = (function (this42274,other42275){
+fif.impl.stack_machine.StackMachine.prototype.cljs$core$IEquiv$_equiv$arity$2 = (function (this34297,other34298){
 var self__ = this;
-var this42274__$1 = this;
-return (((!((other42275 == null)))) && ((this42274__$1.constructor === other42275.constructor)) && (cljs.core._EQ_.call(null,this42274__$1.arg_stack,other42275.arg_stack)) && (cljs.core._EQ_.call(null,this42274__$1.code_stack,other42275.code_stack)) && (cljs.core._EQ_.call(null,this42274__$1.ret_stack,other42275.ret_stack)) && (cljs.core._EQ_.call(null,this42274__$1.temp_macro_stack,other42275.temp_macro_stack)) && (cljs.core._EQ_.call(null,this42274__$1.scope,other42275.scope)) && (cljs.core._EQ_.call(null,this42274__$1.sub_stash,other42275.sub_stash)) && (cljs.core._EQ_.call(null,this42274__$1.mode_stash,other42275.mode_stash)) && (cljs.core._EQ_.call(null,this42274__$1.flags,other42275.flags)) && (cljs.core._EQ_.call(null,this42274__$1.modes,other42275.modes)) && (cljs.core._EQ_.call(null,this42274__$1.step_num,other42275.step_num)) && (cljs.core._EQ_.call(null,this42274__$1.step_max,other42275.step_max)) && (cljs.core._EQ_.call(null,this42274__$1.system_error_handler,other42275.system_error_handler)) && (cljs.core._EQ_.call(null,this42274__$1.stack_error_handler,other42275.stack_error_handler)) && (cljs.core._EQ_.call(null,this42274__$1.halt_QMARK_,other42275.halt_QMARK_)) && (cljs.core._EQ_.call(null,this42274__$1.debug_QMARK_,other42275.debug_QMARK_)) && (cljs.core._EQ_.call(null,this42274__$1.__extmap,other42275.__extmap)));
+var this34297__$1 = this;
+return (((!((other34298 == null)))) && ((this34297__$1.constructor === other34298.constructor)) && (cljs.core._EQ_.call(null,this34297__$1.arg_stack,other34298.arg_stack)) && (cljs.core._EQ_.call(null,this34297__$1.code_stack,other34298.code_stack)) && (cljs.core._EQ_.call(null,this34297__$1.ret_stack,other34298.ret_stack)) && (cljs.core._EQ_.call(null,this34297__$1.temp_macro_stack,other34298.temp_macro_stack)) && (cljs.core._EQ_.call(null,this34297__$1.scope,other34298.scope)) && (cljs.core._EQ_.call(null,this34297__$1.sub_stash,other34298.sub_stash)) && (cljs.core._EQ_.call(null,this34297__$1.mode_stash,other34298.mode_stash)) && (cljs.core._EQ_.call(null,this34297__$1.flags,other34298.flags)) && (cljs.core._EQ_.call(null,this34297__$1.modes,other34298.modes)) && (cljs.core._EQ_.call(null,this34297__$1.step_num,other34298.step_num)) && (cljs.core._EQ_.call(null,this34297__$1.step_max,other34298.step_max)) && (cljs.core._EQ_.call(null,this34297__$1.system_error_handler,other34298.system_error_handler)) && (cljs.core._EQ_.call(null,this34297__$1.stack_error_handler,other34298.stack_error_handler)) && (cljs.core._EQ_.call(null,this34297__$1.halt_QMARK_,other34298.halt_QMARK_)) && (cljs.core._EQ_.call(null,this34297__$1.debug_QMARK_,other34298.debug_QMARK_)) && (cljs.core._EQ_.call(null,this34297__$1.__extmap,other34298.__extmap)));
 });
 
 fif.impl.stack_machine.StackMachine.prototype.fif$stack_machine$IStackMachine$ = cljs.core.PROTOCOL_SENTINEL;
@@ -266,20 +266,20 @@ var this$__$1 = this;
 var arg = cljs.core.first.call(null,this$__$1.fif$stack_machine$IStackMachine$get_code$arity$1(null));
 if(fif.stack_machine.flags.has_flags_QMARK_.call(null,this$__$1)){
 try{return fif.stack_machine.inc_step.call(null,fif.stack_machine.processor.process_mode.call(null,this$__$1));
-}catch (e42282){if((e42282 instanceof Error)){
-var ex = e42282;
+}catch (e34305){if((e34305 instanceof Error)){
+var ex = e34305;
 return fif.stack_machine.error_handling.handle_system_error.call(null,this$__$1,ex);
 } else {
-throw e42282;
+throw e34305;
 
 }
 }} else {
 try{return fif.stack_machine.inc_step.call(null,fif.stack_machine.processor.process_arg.call(null,this$__$1));
-}catch (e42283){if((e42283 instanceof Error)){
-var ex = e42283;
+}catch (e34306){if((e34306 instanceof Error)){
+var ex = e34306;
 return fif.stack_machine.error_handling.handle_system_error.call(null,this$__$1,ex);
 } else {
-throw e42283;
+throw e34306;
 
 }
 }}
@@ -361,8 +361,8 @@ return fif.stack_machine.exceptions.raise_max_steps_exceeded.call(null,sm);
 if(cljs.core.truth_(new cljs.core.Keyword(null,"halt?","halt?",-1110658247).cljs$core$IFn$_invoke$arity$1(sm))){
 return sm;
 } else {
-var G__42289 = sm.fif$stack_machine$IStackMachine$step$arity$1(null);
-sm = G__42289;
+var G__34312 = sm.fif$stack_machine$IStackMachine$step$arity$1(null);
+sm = G__34312;
 continue;
 
 }
@@ -460,8 +460,8 @@ fif.impl.stack_machine.StackMachine.prototype.fif$stack_machine$IStackMachine$de
 var self__ = this;
 var this$__$1 = this;
 return cljs.core.update_in.call(null,this$__$1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"code-stack","code-stack",1724254090)], null),((function (this$__$1){
-return (function (p1__42271_SHARP_){
-return cljs.core.vec.call(null,cljs.core.rest.call(null,p1__42271_SHARP_));
+return (function (p1__34294_SHARP_){
+return cljs.core.vec.call(null,cljs.core.rest.call(null,p1__34294_SHARP_));
 });})(this$__$1))
 );
 });
@@ -615,57 +615,57 @@ return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_sta
 }
 });
 
-fif.impl.stack_machine.StackMachine.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4308__auto__,k__4309__auto__,G__42272){
+fif.impl.stack_machine.StackMachine.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4308__auto__,k__4309__auto__,G__34295){
 var self__ = this;
 var this__4308__auto____$1 = this;
-var pred__42284 = cljs.core.keyword_identical_QMARK_;
-var expr__42285 = k__4309__auto__;
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(G__42272,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+var pred__34307 = cljs.core.keyword_identical_QMARK_;
+var expr__34308 = k__4309__auto__;
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(G__34295,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,G__42272,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,G__34295,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,G__42272,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,G__34295,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,G__42272,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,G__34295,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"scope","scope",-439358418),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,G__42272,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"scope","scope",-439358418),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,G__34295,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,G__42272,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,G__34295,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,G__42272,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,G__34295,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"flags","flags",1775418075),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,G__42272,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"flags","flags",1775418075),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,G__34295,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"modes","modes",-1377787092),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,G__42272,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"modes","modes",-1377787092),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,G__34295,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"step-num","step-num",-1199653885),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,G__42272,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"step-num","step-num",-1199653885),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,G__34295,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"step-max","step-max",-2042341837),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,G__42272,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"step-max","step-max",-2042341837),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,G__34295,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,G__42272,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,G__34295,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,G__42272,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,G__34295,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"halt?","halt?",-1110658247),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,G__42272,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"halt?","halt?",-1110658247),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,G__34295,self__.debug_QMARK_,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__42284.call(null,new cljs.core.Keyword(null,"debug?","debug?",-1831756173),expr__42285))){
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,G__42272,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__34307.call(null,new cljs.core.Keyword(null,"debug?","debug?",-1831756173),expr__34308))){
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,G__34295,self__.__meta,self__.__extmap,null));
 } else {
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__4309__auto__,G__42272),null));
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__4309__auto__,G__34295),null));
 }
 }
 }
@@ -689,10 +689,10 @@ var this__4313__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.MapEntry(new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),self__.arg_stack,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),self__.code_stack,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),self__.ret_stack,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),self__.temp_macro_stack,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"scope","scope",-439358418),self__.scope,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),self__.sub_stash,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),self__.mode_stash,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"flags","flags",1775418075),self__.flags,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"modes","modes",-1377787092),self__.modes,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"step-num","step-num",-1199653885),self__.step_num,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"step-max","step-max",-2042341837),self__.step_max,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),self__.system_error_handler,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),self__.stack_error_handler,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"halt?","halt?",-1110658247),self__.halt_QMARK_,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"debug?","debug?",-1831756173),self__.debug_QMARK_,null))], null),self__.__extmap));
 });
 
-fif.impl.stack_machine.StackMachine.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__4300__auto__,G__42272){
+fif.impl.stack_machine.StackMachine.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__4300__auto__,G__34295){
 var self__ = this;
 var this__4300__auto____$1 = this;
-return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,G__42272,self__.__extmap,self__.__hash));
+return (new fif.impl.stack_machine.StackMachine(self__.arg_stack,self__.code_stack,self__.ret_stack,self__.temp_macro_stack,self__.scope,self__.sub_stash,self__.mode_stash,self__.flags,self__.modes,self__.step_num,self__.step_max,self__.system_error_handler,self__.stack_error_handler,self__.halt_QMARK_,self__.debug_QMARK_,G__34295,self__.__extmap,self__.__hash));
 });
 
 fif.impl.stack_machine.StackMachine.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__4306__auto__,entry__4307__auto__){
@@ -729,15 +729,15 @@ return (new fif.impl.stack_machine.StackMachine(arg_stack,code_stack,ret_stack,t
 /**
  * Factory function for fif.impl.stack-machine/StackMachine, taking a map of keywords to field values.
  */
-fif.impl.stack_machine.map__GT_StackMachine = (function fif$impl$stack_machine$map__GT_StackMachine(G__42276){
-var extmap__4340__auto__ = (function (){var G__42287 = cljs.core.dissoc.call(null,G__42276,new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),new cljs.core.Keyword(null,"scope","scope",-439358418),new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),new cljs.core.Keyword(null,"flags","flags",1775418075),new cljs.core.Keyword(null,"modes","modes",-1377787092),new cljs.core.Keyword(null,"step-num","step-num",-1199653885),new cljs.core.Keyword(null,"step-max","step-max",-2042341837),new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),new cljs.core.Keyword(null,"halt?","halt?",-1110658247),new cljs.core.Keyword(null,"debug?","debug?",-1831756173));
-if(cljs.core.record_QMARK_.call(null,G__42276)){
-return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,G__42287);
+fif.impl.stack_machine.map__GT_StackMachine = (function fif$impl$stack_machine$map__GT_StackMachine(G__34299){
+var extmap__4340__auto__ = (function (){var G__34310 = cljs.core.dissoc.call(null,G__34299,new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871),new cljs.core.Keyword(null,"code-stack","code-stack",1724254090),new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511),new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320),new cljs.core.Keyword(null,"scope","scope",-439358418),new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691),new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468),new cljs.core.Keyword(null,"flags","flags",1775418075),new cljs.core.Keyword(null,"modes","modes",-1377787092),new cljs.core.Keyword(null,"step-num","step-num",-1199653885),new cljs.core.Keyword(null,"step-max","step-max",-2042341837),new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636),new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214),new cljs.core.Keyword(null,"halt?","halt?",-1110658247),new cljs.core.Keyword(null,"debug?","debug?",-1831756173));
+if(cljs.core.record_QMARK_.call(null,G__34299)){
+return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,G__34310);
 } else {
-return G__42287;
+return G__34310;
 }
 })();
-return (new fif.impl.stack_machine.StackMachine(new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"code-stack","code-stack",1724254090).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"scope","scope",-439358418).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"flags","flags",1775418075).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"modes","modes",-1377787092).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"step-num","step-num",-1199653885).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"step-max","step-max",-2042341837).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"halt?","halt?",-1110658247).cljs$core$IFn$_invoke$arity$1(G__42276),new cljs.core.Keyword(null,"debug?","debug?",-1831756173).cljs$core$IFn$_invoke$arity$1(G__42276),null,cljs.core.not_empty.call(null,extmap__4340__auto__),null));
+return (new fif.impl.stack_machine.StackMachine(new cljs.core.Keyword(null,"arg-stack","arg-stack",922575871).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"code-stack","code-stack",1724254090).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"ret-stack","ret-stack",-1920171511).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"temp-macro-stack","temp-macro-stack",-1463109320).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"scope","scope",-439358418).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"sub-stash","sub-stash",113397691).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"mode-stash","mode-stash",1076000468).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"flags","flags",1775418075).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"modes","modes",-1377787092).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"step-num","step-num",-1199653885).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"step-max","step-max",-2042341837).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"system-error-handler","system-error-handler",-1929601636).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"stack-error-handler","stack-error-handler",1957614214).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"halt?","halt?",-1110658247).cljs$core$IFn$_invoke$arity$1(G__34299),new cljs.core.Keyword(null,"debug?","debug?",-1831756173).cljs$core$IFn$_invoke$arity$1(G__34299),null,cljs.core.not_empty.call(null,extmap__4340__auto__),null));
 });
 
 fif.impl.stack_machine.new_stack_machine = (function fif$impl$stack_machine$new_stack_machine(){

@@ -6,8 +6,8 @@ goog.require('fif.stack_machine.evaluators');
 goog.require('fif.stack_machine.words');
 goog.require('fif.def');
 fif.stdlib.type_checking.word_QMARK__op = (function fif$stdlib$type_checking$word_QMARK__op(sm){
-var vec__42227 = fif.stack_machine.get_stack.call(null,sm);
-var wname = cljs.core.nth.call(null,vec__42227,(0),null);
+var vec__34206 = fif.stack_machine.get_stack.call(null,sm);
+var wname = cljs.core.nth.call(null,vec__34206,(0),null);
 if(cljs.core.truth_(cljs.core.get.call(null,fif.stack_machine.words.get_word_listing.call(null,sm),wname))){
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,sm),true));
 } else {
@@ -15,8 +15,8 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.cal
 }
 });
 fif.stdlib.type_checking.fn_QMARK__op = (function fif$stdlib$type_checking$fn_QMARK__op(sm){
-var vec__42230 = fif.stack_machine.get_stack.call(null,sm);
-var wname = cljs.core.nth.call(null,vec__42230,(0),null);
+var vec__34209 = fif.stack_machine.get_stack.call(null,sm);
+var wname = cljs.core.nth.call(null,vec__34209,(0),null);
 var temp__5718__auto__ = fif.stack_machine.words.get_global_metadata.call(null,sm,wname);
 if(cljs.core.truth_(temp__5718__auto__)){
 var meta = temp__5718__auto__;
@@ -30,8 +30,8 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.cal
 }
 });
 fif.stdlib.type_checking.variable_QMARK__op = (function fif$stdlib$type_checking$variable_QMARK__op(sm){
-var vec__42233 = fif.stack_machine.get_stack.call(null,sm);
-var wname = cljs.core.nth.call(null,vec__42233,(0),null);
+var vec__34212 = fif.stack_machine.get_stack.call(null,sm);
+var wname = cljs.core.nth.call(null,vec__34212,(0),null);
 var temp__5718__auto__ = fif.stack_machine.words.get_global_metadata.call(null,sm,wname);
 if(cljs.core.truth_(temp__5718__auto__)){
 var meta = temp__5718__auto__;

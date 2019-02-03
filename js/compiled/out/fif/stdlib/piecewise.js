@@ -9,21 +9,21 @@ goog.require('fif.def');
  *   stack. Used to dereference variables on the stack, or to reorganize stack values.
  */
 fif.stdlib.piecewise.piecewise_first = (function fif$stdlib$piecewise$piecewise_first(sm){
-var vec__42189 = fif.stack_machine.get_stack.call(null,sm);
-var x1 = cljs.core.nth.call(null,vec__42189,(0),null);
+var vec__34168 = fif.stack_machine.get_stack.call(null,sm);
+var x1 = cljs.core.nth.call(null,vec__34168,(0),null);
 return fif.stack_machine.push_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.pop_stack.call(null,sm)),x1);
 });
 fif.stdlib.piecewise.piecewise_second = (function fif$stdlib$piecewise$piecewise_second(sm){
-var vec__42192 = fif.stack_machine.get_stack.call(null,sm);
-var x1 = cljs.core.nth.call(null,vec__42192,(0),null);
-var x2 = cljs.core.nth.call(null,vec__42192,(1),null);
+var vec__34171 = fif.stack_machine.get_stack.call(null,sm);
+var x1 = cljs.core.nth.call(null,vec__34171,(0),null);
+var x2 = cljs.core.nth.call(null,vec__34171,(1),null);
 return fif.stack_machine.push_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,sm)),x1)),x2);
 });
 fif.stdlib.piecewise.piecewise_third = (function fif$stdlib$piecewise$piecewise_third(sm){
-var vec__42195 = fif.stack_machine.get_stack.call(null,sm);
-var x1 = cljs.core.nth.call(null,vec__42195,(0),null);
-var x2 = cljs.core.nth.call(null,vec__42195,(1),null);
-var x3 = cljs.core.nth.call(null,vec__42195,(2),null);
+var vec__34174 = fif.stack_machine.get_stack.call(null,sm);
+var x1 = cljs.core.nth.call(null,vec__34174,(0),null);
+var x2 = cljs.core.nth.call(null,vec__34174,(1),null);
+var x3 = cljs.core.nth.call(null,vec__34174,(2),null);
 return fif.stack_machine.push_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,sm))),x2),x1)),x3);
 });
 fif.stdlib.piecewise.import_stdlib_piecewise = (function fif$stdlib$piecewise$import_stdlib_piecewise(sm){

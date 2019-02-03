@@ -50,13 +50,13 @@ fif.stdlib.functional_ops.reduce_op = (function fif$stdlib$functional_ops$reduce
 return fif.stdlib.functional_ops.enter_functional_mode.call(null,sm,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","reduce","fif.stdlib.functional-ops/reduce",-563035678),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","init","fif.stdlib.functional-ops/init",2146901619)], null));
 });
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","reduce","fif.stdlib.functional-ops/reduce",-563035678),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","init","fif.stdlib.functional-ops/init",2146901619)], null),(function (sm){
-var vec__36701 = fif.stack_machine.get_stack.call(null,sm);
-var collection = cljs.core.nth.call(null,vec__36701,(0),null);
-var rfunction = cljs.core.nth.call(null,vec__36701,(1),null);
-return fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","rfunction","fif.stdlib.functional-ops/rfunction",856350138),rfunction,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),cljs.core.rest.call(null,collection),new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590),cljs.core.first.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521))),((function (vec__36701,collection,rfunction){
-return (function (p1__36700_SHARP_,p2__36699_SHARP_){
-return cljs.core.concat.call(null,p2__36699_SHARP_,p1__36700_SHARP_);
-});})(vec__36701,collection,rfunction))
+var vec__32187 = fif.stack_machine.get_stack.call(null,sm);
+var collection = cljs.core.nth.call(null,vec__32187,(0),null);
+var rfunction = cljs.core.nth.call(null,vec__32187,(1),null);
+return fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","rfunction","fif.stdlib.functional-ops/rfunction",856350138),rfunction,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),cljs.core.rest.call(null,collection),new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590),cljs.core.first.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521))),((function (vec__32187,collection,rfunction){
+return (function (p1__32186_SHARP_,p2__32185_SHARP_){
+return cljs.core.concat.call(null,p2__32185_SHARP_,p1__32186_SHARP_);
+});})(vec__32187,collection,rfunction))
 ,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [fif.stdlib.functional_ops.arg_iter_reduce_token], null))));
 }));
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","reduce","fif.stdlib.functional-ops/reduce",-563035678),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521)], null),(function (sm){
@@ -68,16 +68,16 @@ if(cljs.core.empty_QMARK_.call(null,collection)){
 return fif.stack_machine.mode.update_state.call(null,sm,cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","finish","fif.stdlib.functional-ops/finish",-858845223));
 } else {
 return fif.stack_machine.update_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.push_stack.call(null,sm,result),cljs.core.first.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),cljs.core.rest.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","iterate","fif.stdlib.functional-ops/iterate",2011271572)),((function (stash,rfunction,collection,result){
-return (function (p1__36705_SHARP_,p2__36704_SHARP_){
-return cljs.core.concat.call(null,p2__36704_SHARP_,p1__36705_SHARP_);
+return (function (p1__32191_SHARP_,p2__32190_SHARP_){
+return cljs.core.concat.call(null,p2__32190_SHARP_,p1__32191_SHARP_);
 });})(stash,rfunction,collection,result))
 ,fif.stdlib.functional_ops.prepare_rfunction.call(null,rfunction));
 
 }
 }));
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","reduce","fif.stdlib.functional-ops/reduce",-563035678),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","iterate","fif.stdlib.functional-ops/iterate",2011271572)], null),(function (sm){
-var vec__36706 = fif.stack_machine.get_stack.call(null,sm);
-var top = cljs.core.nth.call(null,vec__36706,(0),null);
+var vec__32192 = fif.stack_machine.get_stack.call(null,sm);
+var top = cljs.core.nth.call(null,vec__32192,(0),null);
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.functional_ops.arg_iter_reduce_token)){
 return fif.stack_machine.pop_stack.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590),cljs.core.peek.call(null,fif.stack_machine.get_stack.call(null,sm))),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521)));
@@ -94,13 +94,13 @@ fif.stdlib.functional_ops.map_op = (function fif$stdlib$functional_ops$map_op(sm
 return fif.stdlib.functional_ops.enter_functional_mode.call(null,sm,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","map","fif.stdlib.functional-ops/map",1082236086),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","init","fif.stdlib.functional-ops/init",2146901619)], null));
 });
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","map","fif.stdlib.functional-ops/map",1082236086),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","init","fif.stdlib.functional-ops/init",2146901619)], null),(function (sm){
-var vec__36711 = fif.stack_machine.get_stack.call(null,sm);
-var collection = cljs.core.nth.call(null,vec__36711,(0),null);
-var rfunction = cljs.core.nth.call(null,vec__36711,(1),null);
-return fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","rfunction","fif.stdlib.functional-ops/rfunction",856350138),rfunction,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),collection,new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590),cljs.core.List.EMPTY),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521))),((function (vec__36711,collection,rfunction){
-return (function (p1__36710_SHARP_,p2__36709_SHARP_){
-return cljs.core.concat.call(null,p2__36709_SHARP_,p1__36710_SHARP_);
-});})(vec__36711,collection,rfunction))
+var vec__32197 = fif.stack_machine.get_stack.call(null,sm);
+var collection = cljs.core.nth.call(null,vec__32197,(0),null);
+var rfunction = cljs.core.nth.call(null,vec__32197,(1),null);
+return fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","rfunction","fif.stdlib.functional-ops/rfunction",856350138),rfunction,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),collection,new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590),cljs.core.List.EMPTY),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521))),((function (vec__32197,collection,rfunction){
+return (function (p1__32196_SHARP_,p2__32195_SHARP_){
+return cljs.core.concat.call(null,p2__32195_SHARP_,p1__32196_SHARP_);
+});})(vec__32197,collection,rfunction))
 ,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [fif.stdlib.functional_ops.arg_iter_map_token], null))));
 }));
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","map","fif.stdlib.functional-ops/map",1082236086),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521)], null),(function (sm){
@@ -111,16 +111,16 @@ if(cljs.core.empty_QMARK_.call(null,collection)){
 return fif.stack_machine.mode.update_state.call(null,sm,cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","finish","fif.stdlib.functional-ops/finish",-858845223));
 } else {
 return fif.stack_machine.update_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,fif.stack_machine.push_stack.call(null,sm,cljs.core.first.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),cljs.core.rest.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","iterate","fif.stdlib.functional-ops/iterate",2011271572)),((function (stash,rfunction,collection){
-return (function (p1__36715_SHARP_,p2__36714_SHARP_){
-return cljs.core.concat.call(null,p2__36714_SHARP_,p1__36715_SHARP_);
+return (function (p1__32201_SHARP_,p2__32200_SHARP_){
+return cljs.core.concat.call(null,p2__32200_SHARP_,p1__32201_SHARP_);
 });})(stash,rfunction,collection))
 ,fif.stdlib.functional_ops.prepare_rfunction.call(null,rfunction));
 
 }
 }));
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","map","fif.stdlib.functional-ops/map",1082236086),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","iterate","fif.stdlib.functional-ops/iterate",2011271572)], null),(function (sm){
-var vec__36716 = fif.stack_machine.get_stack.call(null,sm);
-var top = cljs.core.nth.call(null,vec__36716,(0),null);
+var vec__32202 = fif.stack_machine.get_stack.call(null,sm);
+var top = cljs.core.nth.call(null,vec__32202,(0),null);
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
 var result = new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590).cljs$core$IFn$_invoke$arity$1(fif.stack_machine.stash.peek_stash.call(null,sm));
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.functional_ops.arg_iter_map_token)){
@@ -138,13 +138,13 @@ fif.stdlib.functional_ops.filter_op = (function fif$stdlib$functional_ops$filter
 return fif.stdlib.functional_ops.enter_functional_mode.call(null,sm,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","filter","fif.stdlib.functional-ops/filter",-675893361),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","init","fif.stdlib.functional-ops/init",2146901619)], null));
 });
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","filter","fif.stdlib.functional-ops/filter",-675893361),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","init","fif.stdlib.functional-ops/init",2146901619)], null),(function (sm){
-var vec__36721 = fif.stack_machine.get_stack.call(null,sm);
-var collection = cljs.core.nth.call(null,vec__36721,(0),null);
-var rfunction = cljs.core.nth.call(null,vec__36721,(1),null);
-return fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","rfunction","fif.stdlib.functional-ops/rfunction",856350138),rfunction,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),collection,new cljs.core.Keyword("fif.stdlib.functional-ops","current-value","fif.stdlib.functional-ops/current-value",-849201004),null,new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590),cljs.core.List.EMPTY),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521))),((function (vec__36721,collection,rfunction){
-return (function (p1__36720_SHARP_,p2__36719_SHARP_){
-return cljs.core.concat.call(null,p2__36719_SHARP_,p1__36720_SHARP_);
-});})(vec__36721,collection,rfunction))
+var vec__32207 = fif.stack_machine.get_stack.call(null,sm);
+var collection = cljs.core.nth.call(null,vec__32207,(0),null);
+var rfunction = cljs.core.nth.call(null,vec__32207,(1),null);
+return fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.update_code.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","rfunction","fif.stdlib.functional-ops/rfunction",856350138),rfunction,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),collection,new cljs.core.Keyword("fif.stdlib.functional-ops","current-value","fif.stdlib.functional-ops/current-value",-849201004),null,new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590),cljs.core.List.EMPTY),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521))),((function (vec__32207,collection,rfunction){
+return (function (p1__32206_SHARP_,p2__32205_SHARP_){
+return cljs.core.concat.call(null,p2__32205_SHARP_,p1__32206_SHARP_);
+});})(vec__32207,collection,rfunction))
 ,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [fif.stdlib.functional_ops.arg_iter_filter_token], null))));
 }));
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","filter","fif.stdlib.functional-ops/filter",-675893361),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","next-iteration","fif.stdlib.functional-ops/next-iteration",-18300521)], null),(function (sm){
@@ -155,16 +155,16 @@ if(cljs.core.empty_QMARK_.call(null,collection)){
 return fif.stack_machine.mode.update_state.call(null,sm,cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","finish","fif.stdlib.functional-ops/finish",-858845223));
 } else {
 return fif.stack_machine.update_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,fif.stack_machine.push_stack.call(null,sm,cljs.core.first.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.functional-ops","collection","fif.stdlib.functional-ops/collection",1736699731),cljs.core.rest.call(null,collection),new cljs.core.Keyword("fif.stdlib.functional-ops","current-value","fif.stdlib.functional-ops/current-value",-849201004),cljs.core.first.call(null,collection)),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","iterate","fif.stdlib.functional-ops/iterate",2011271572)),((function (stash,rfunction,collection){
-return (function (p1__36725_SHARP_,p2__36724_SHARP_){
-return cljs.core.concat.call(null,p2__36724_SHARP_,p1__36725_SHARP_);
+return (function (p1__32211_SHARP_,p2__32210_SHARP_){
+return cljs.core.concat.call(null,p2__32210_SHARP_,p1__32211_SHARP_);
 });})(stash,rfunction,collection))
 ,fif.stdlib.functional_ops.prepare_rfunction.call(null,rfunction));
 
 }
 }));
 cljs.core._add_method.call(null,fif.stdlib.functional_ops.functional_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.functional-ops","filter","fif.stdlib.functional-ops/filter",-675893361),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.functional-ops","iterate","fif.stdlib.functional-ops/iterate",2011271572)], null),(function (sm){
-var vec__36726 = fif.stack_machine.get_stack.call(null,sm);
-var top = cljs.core.nth.call(null,vec__36726,(0),null);
+var vec__32212 = fif.stack_machine.get_stack.call(null,sm);
+var top = cljs.core.nth.call(null,vec__32212,(0),null);
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
 var result = new cljs.core.Keyword("fif.stdlib.functional-ops","result","fif.stdlib.functional-ops/result",614320590).cljs$core$IFn$_invoke$arity$1(fif.stack_machine.stash.peek_stash.call(null,sm));
 var value = new cljs.core.Keyword("fif.stdlib.functional-ops","current-value","fif.stdlib.functional-ops/current-value",-849201004).cljs$core$IFn$_invoke$arity$1(fif.stack_machine.stash.peek_stash.call(null,sm));

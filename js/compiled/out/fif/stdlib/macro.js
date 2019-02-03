@@ -23,12 +23,12 @@ var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
 var stash = fif.stack_machine.get_stash.call(null,sm);
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.macro.arg_end_macro)){
 var macro_content = cljs.core.reverse.call(null,fif.stack_machine.sub_stack.get_sub_stack.call(null,stash));
-var vec__42103 = macro_content;
-var seq__42104 = cljs.core.seq.call(null,vec__42103);
-var first__42105 = cljs.core.first.call(null,seq__42104);
-var seq__42104__$1 = cljs.core.next.call(null,seq__42104);
-var wname = first__42105;
-var wbody = seq__42104__$1;
+var vec__34082 = macro_content;
+var seq__34083 = cljs.core.seq.call(null,vec__34082);
+var first__34084 = cljs.core.first.call(null,seq__34083);
+var seq__34083__$1 = cljs.core.next.call(null,seq__34083);
+var wname = first__34084;
+var wbody = seq__34083__$1;
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.pop_flag.call(null,fif.stack_machine.set_stash.call(null,fif.stack_machine.set_word.call(null,sm,wname,fif.stdlib.macro.wrap_compiled_macro.call(null,wbody)),fif.stack_machine.sub_stack.remove_sub_stack.call(null,stash))));
 } else {
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stash.call(null,sm,fif.stack_machine.sub_stack.push_sub_stack.call(null,stash,arg)));

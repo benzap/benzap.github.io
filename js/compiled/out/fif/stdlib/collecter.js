@@ -15,9 +15,9 @@ fif.stdlib.collecter.collecter_mode = (function fif$stdlib$collecter$collecter_m
 var stack = fif.stack_machine.get_stack.call(null,sm);
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.collecter.arg_end_collecter)){
-var vec__42113 = fif.utils.token.split_at_token.call(null,stack,fif.stdlib.collecter.arg_start_collecter);
-var new_collection_values = cljs.core.nth.call(null,vec__42113,(0),null);
-var new_stack = cljs.core.nth.call(null,vec__42113,(1),null);
+var vec__34092 = fif.utils.token.split_at_token.call(null,stack,fif.stdlib.collecter.arg_start_collecter);
+var new_collection_values = cljs.core.nth.call(null,vec__34092,(0),null);
+var new_stack = cljs.core.nth.call(null,vec__34092,(1),null);
 var collection = cljs.core.into.call(null,cljs.core.peek.call(null,new_stack),cljs.core.reverse.call(null,new_collection_values));
 var new_stack__$1 = cljs.core.rest.call(null,new_stack);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stack.call(null,fif.stack_machine.pop_flag.call(null,sm),cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [collection], null),new_stack__$1)));

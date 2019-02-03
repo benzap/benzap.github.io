@@ -1129,8 +1129,8 @@ throw cljs.core.missing_protocol.call(null,"IStackMachine.continue",this$);
 });
 
 fif.stack_machine.push_stack = (function fif$stack_machine$push_stack(var_args){
-var G__36322 = arguments.length;
-switch (G__36322) {
+var G__31854 = arguments.length;
+switch (G__31854) {
 case 2:
 return fif.stack_machine.push_stack.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -1145,14 +1145,14 @@ return fif.stack_machine.push_stack.cljs$core$IFn$_invoke$arity$4((arguments[(0)
 break;
 default:
 var args_arr__4662__auto__ = [];
-var len__4641__auto___36324 = arguments.length;
-var i__4642__auto___36325 = (0);
+var len__4641__auto___31856 = arguments.length;
+var i__4642__auto___31857 = (0);
 while(true){
-if((i__4642__auto___36325 < len__4641__auto___36324)){
-args_arr__4662__auto__.push((arguments[i__4642__auto___36325]));
+if((i__4642__auto___31857 < len__4641__auto___31856)){
+args_arr__4662__auto__.push((arguments[i__4642__auto___31857]));
 
-var G__36326 = (i__4642__auto___36325 + (1));
-i__4642__auto___36325 = G__36326;
+var G__31858 = (i__4642__auto___31857 + (1));
+i__4642__auto___31857 = G__31858;
 continue;
 } else {
 }
@@ -1183,31 +1183,31 @@ return cljs.core.reduce.call(null,fif.stack_machine.push_stack_STAR_,$,xs);
 });
 
 /** @this {Function} */
-fif.stack_machine.push_stack.cljs$lang$applyTo = (function (seq36317){
-var G__36318 = cljs.core.first.call(null,seq36317);
-var seq36317__$1 = cljs.core.next.call(null,seq36317);
-var G__36319 = cljs.core.first.call(null,seq36317__$1);
-var seq36317__$2 = cljs.core.next.call(null,seq36317__$1);
-var G__36320 = cljs.core.first.call(null,seq36317__$2);
-var seq36317__$3 = cljs.core.next.call(null,seq36317__$2);
-var G__36321 = cljs.core.first.call(null,seq36317__$3);
-var seq36317__$4 = cljs.core.next.call(null,seq36317__$3);
+fif.stack_machine.push_stack.cljs$lang$applyTo = (function (seq31849){
+var G__31850 = cljs.core.first.call(null,seq31849);
+var seq31849__$1 = cljs.core.next.call(null,seq31849);
+var G__31851 = cljs.core.first.call(null,seq31849__$1);
+var seq31849__$2 = cljs.core.next.call(null,seq31849__$1);
+var G__31852 = cljs.core.first.call(null,seq31849__$2);
+var seq31849__$3 = cljs.core.next.call(null,seq31849__$2);
+var G__31853 = cljs.core.first.call(null,seq31849__$3);
+var seq31849__$4 = cljs.core.next.call(null,seq31849__$3);
 var self__4628__auto__ = this;
-return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__36318,G__36319,G__36320,G__36321,seq36317__$4);
+return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31850,G__31851,G__31852,G__31853,seq31849__$4);
 });
 
 fif.stack_machine.push_stack.cljs$lang$maxFixedArity = (4);
 
 fif.stack_machine.update_code = (function fif$stack_machine$update_code(var_args){
 var args__4647__auto__ = [];
-var len__4641__auto___36330 = arguments.length;
-var i__4642__auto___36331 = (0);
+var len__4641__auto___31862 = arguments.length;
+var i__4642__auto___31863 = (0);
 while(true){
-if((i__4642__auto___36331 < len__4641__auto___36330)){
-args__4647__auto__.push((arguments[i__4642__auto___36331]));
+if((i__4642__auto___31863 < len__4641__auto___31862)){
+args__4647__auto__.push((arguments[i__4642__auto___31863]));
 
-var G__36332 = (i__4642__auto___36331 + (1));
-i__4642__auto___36331 = G__36332;
+var G__31864 = (i__4642__auto___31863 + (1));
+i__4642__auto___31863 = G__31864;
 continue;
 } else {
 }
@@ -1226,13 +1226,13 @@ return fif.stack_machine.set_code.call(null,sm,cljs.core.apply.call(null,f,code,
 fif.stack_machine.update_code.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.stack_machine.update_code.cljs$lang$applyTo = (function (seq36327){
-var G__36328 = cljs.core.first.call(null,seq36327);
-var seq36327__$1 = cljs.core.next.call(null,seq36327);
-var G__36329 = cljs.core.first.call(null,seq36327__$1);
-var seq36327__$2 = cljs.core.next.call(null,seq36327__$1);
+fif.stack_machine.update_code.cljs$lang$applyTo = (function (seq31859){
+var G__31860 = cljs.core.first.call(null,seq31859);
+var seq31859__$1 = cljs.core.next.call(null,seq31859);
+var G__31861 = cljs.core.first.call(null,seq31859__$1);
+var seq31859__$2 = cljs.core.next.call(null,seq31859__$1);
 var self__4628__auto__ = this;
-return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__36328,G__36329,seq36327__$2);
+return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31860,G__31861,seq31859__$2);
 });
 
 fif.stack_machine.set_word = (function fif$stack_machine$set_word(sm,wname,wfunc){

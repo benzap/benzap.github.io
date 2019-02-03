@@ -15,8 +15,8 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  *   the two elements on the main stack.
  */
 fif.stdlib.collection_ops.op_unpair = (function fif$stdlib$collection_ops$op_unpair(sm){
-var vec__40831 = fif.stack_machine.get_stack.call(null,sm);
-var x = cljs.core.nth.call(null,vec__40831,(0),null);
+var vec__32810 = fif.stack_machine.get_stack.call(null,sm);
+var x = cljs.core.nth.call(null,vec__32810,(0),null);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,sm),cljs.core.first.call(null,x)),cljs.core.second.call(null,x)));
 });
 /**
@@ -25,13 +25,13 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.cal
  *   the code queue.
  */
 fif.stdlib.collection_ops.apply_op = (function fif$stdlib$collection_ops$apply_op(sm){
-var vec__40836 = fif.stack_machine.get_stack.call(null,sm);
-var coll = cljs.core.nth.call(null,vec__40836,(0),null);
+var vec__32815 = fif.stack_machine.get_stack.call(null,sm);
+var coll = cljs.core.nth.call(null,vec__32815,(0),null);
 var coll__$1 = ((cljs.core.coll_QMARK_.call(null,coll))?coll:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [coll], null));
-return fif.stack_machine.update_code.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,sm)),((function (vec__40836,coll,coll__$1){
-return (function (p1__40835_SHARP_,p2__40834_SHARP_){
-return cljs.core.concat.call(null,p2__40834_SHARP_,p1__40835_SHARP_);
-});})(vec__40836,coll,coll__$1))
+return fif.stack_machine.update_code.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,sm)),((function (vec__32815,coll,coll__$1){
+return (function (p1__32814_SHARP_,p2__32813_SHARP_){
+return cljs.core.concat.call(null,p2__32813_SHARP_,p1__32814_SHARP_);
+});})(vec__32815,coll,coll__$1))
 ,coll__$1);
 });
 /**

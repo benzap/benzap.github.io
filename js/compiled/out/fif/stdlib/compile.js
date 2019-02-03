@@ -69,12 +69,12 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_flag.call
 } else {
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.compile.arg_end_token)){
 var fn_content = fif.stack_machine.stash.peek_stash.call(null,sm);
-var vec__40850 = fn_content;
-var seq__40851 = cljs.core.seq.call(null,vec__40850);
-var first__40852 = cljs.core.first.call(null,seq__40851);
-var seq__40851__$1 = cljs.core.next.call(null,seq__40851);
-var wname = first__40852;
-var wbody = seq__40851__$1;
+var vec__32829 = fn_content;
+var seq__32830 = cljs.core.seq.call(null,vec__32829);
+var first__32831 = cljs.core.first.call(null,seq__32830);
+var seq__32830__$1 = cljs.core.next.call(null,seq__32830);
+var wname = first__32831;
+var wbody = seq__32830__$1;
 if((!((wname instanceof cljs.core.Symbol)))){
 return fif.stack_machine.exceptions.raise_validation_error.call(null,sm,(1),wname,"Function name must be a symbol");
 } else {
