@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('fif.stdlib.cond_loop');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -39,9 +39,9 @@ fif.stdlib.cond_loop.get_loop_end_index = (function fif$stdlib$cond_loop$get_loo
 return cljs.core.second.call(null,cljs.core.peek.call(null,fif.stack_machine.get_ret.call(null,sm)));
 });
 fif.stdlib.cond_loop.increment_loop_index = (function fif$stdlib$cond_loop$increment_loop_index(sm,i){
-var vec__32697 = cljs.core.peek.call(null,fif.stack_machine.get_ret.call(null,sm));
-var start = cljs.core.nth.call(null,vec__32697,(0),null);
-var end = cljs.core.nth.call(null,vec__32697,(1),null);
+var vec__38468 = cljs.core.peek.call(null,fif.stack_machine.get_ret.call(null,sm));
+var start = cljs.core.nth.call(null,vec__38468,(0),null);
+var end = cljs.core.nth.call(null,vec__38468,(1),null);
 return fif.stack_machine.push_ret.call(null,fif.stack_machine.pop_ret.call(null,sm),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(start + i),end], null));
 });
 fif.stdlib.cond_loop.loop_leave_mode = (function fif$stdlib$cond_loop$loop_leave_mode(sm){
@@ -72,8 +72,8 @@ if(cljs.core._EQ_.call(null,arg,fif.stdlib.cond_loop.arg_plus_loopend_token)){
 var start_idx = fif.stdlib.cond_loop.get_loop_start_index.call(null,sm);
 var end_idx = fif.stdlib.cond_loop.get_loop_end_index.call(null,sm);
 if((!((start_idx >= end_idx)))){
-var vec__32700 = fif.stack_machine.get_stack.call(null,sm);
-var loop_step = cljs.core.nth.call(null,vec__32700,(0),null);
+var vec__38471 = fif.stack_machine.get_stack.call(null,sm);
+var loop_step = cljs.core.nth.call(null,vec__38471,(0),null);
 var loop_body = fif.stack_machine.sub_stack.get_sub_stack.call(null,stash);
 var new_code = cljs.core.concat.call(null,cljs.core.reverse.call(null,loop_body),(new cljs.core.List(null,fif.stdlib.cond_loop.arg_plus_loopend_token,null,(1),null)),fif.stack_machine.get_code.call(null,fif.stack_machine.dequeue_code.call(null,sm)));
 return fif.stack_machine.set_code.call(null,fif.stdlib.cond_loop.increment_loop_index.call(null,fif.stack_machine.pop_stack.call(null,sm),loop_step),new_code);
@@ -121,9 +121,9 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stash.call
  * Do structure is <start> <end> do (<body> loop)|(<body ... step> +loop)
  */
 fif.stdlib.cond_loop.start_do = (function fif$stdlib$cond_loop$start_do(sm){
-var vec__32703 = fif.stack_machine.get_stack.call(null,sm);
-var start = cljs.core.nth.call(null,vec__32703,(0),null);
-var end = cljs.core.nth.call(null,vec__32703,(1),null);
+var vec__38474 = fif.stack_machine.get_stack.call(null,sm);
+var start = cljs.core.nth.call(null,vec__38474,(0),null);
+var end = cljs.core.nth.call(null,vec__38474,(1),null);
 var stash = fif.stack_machine.get_stash.call(null,sm);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stash.call(null,fif.stack_machine.push_flag.call(null,fif.stack_machine.push_ret.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.pop_stack.call(null,sm)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [start,end], null)),fif.stdlib.cond_loop.do_mode_flag),fif.stack_machine.sub_stack.create_sub_stack.call(null,stash)));
 });
@@ -176,8 +176,8 @@ fif.stdlib.cond_loop.begin_while_mode = (function fif$stdlib$cond_loop$begin_whi
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
 var stash = fif.stack_machine.get_stash.call(null,sm);
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.cond_loop.arg_while_token)){
-var vec__32706 = fif.stack_machine.get_stack.call(null,sm);
-var flag = cljs.core.nth.call(null,vec__32706,(0),null);
+var vec__38477 = fif.stack_machine.get_stack.call(null,sm);
+var flag = cljs.core.nth.call(null,vec__38477,(0),null);
 if(fif.stdlib.conditional.condition_true_QMARK_.call(null,flag)){
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.pop_stack.call(null,sm));
 } else {
@@ -198,8 +198,8 @@ fif.stdlib.cond_loop.begin_until_mode = (function fif$stdlib$cond_loop$begin_unt
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
 var stash = fif.stack_machine.get_stash.call(null,sm);
 if(cljs.core._EQ_.call(null,arg,fif.stdlib.cond_loop.arg_untilend_token)){
-var vec__32709 = fif.stack_machine.get_stack.call(null,sm);
-var flag = cljs.core.nth.call(null,vec__32709,(0),null);
+var vec__38480 = fif.stack_machine.get_stack.call(null,sm);
+var flag = cljs.core.nth.call(null,vec__38480,(0),null);
 if((!(fif.stdlib.conditional.condition_true_QMARK_.call(null,flag)))){
 var loop_body = fif.stack_machine.sub_stack.get_sub_stack.call(null,stash);
 var new_code = cljs.core.concat.call(null,cljs.core.reverse.call(null,loop_body),(new cljs.core.List(null,fif.stdlib.cond_loop.arg_untilend_token,null,(1),null)),fif.stack_machine.get_code.call(null,fif.stack_machine.dequeue_code.call(null,sm)));
@@ -253,9 +253,9 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stash.call
  *                 begin <?> while <body> repeat
  */
 fif.stdlib.cond_loop.start_begin = (function fif$stdlib$cond_loop$start_begin(sm){
-var vec__32712 = fif.stack_machine.get_stack.call(null,sm);
-var start = cljs.core.nth.call(null,vec__32712,(0),null);
-var end = cljs.core.nth.call(null,vec__32712,(1),null);
+var vec__38483 = fif.stack_machine.get_stack.call(null,sm);
+var start = cljs.core.nth.call(null,vec__38483,(0),null);
+var end = cljs.core.nth.call(null,vec__38483,(1),null);
 var stash = fif.stack_machine.get_stash.call(null,sm);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.set_stash.call(null,fif.stack_machine.push_flag.call(null,sm,fif.stdlib.cond_loop.begin_mode_flag),fif.stack_machine.sub_stack.create_sub_stack.call(null,stash)));
 });
@@ -274,18 +274,18 @@ var recent_begin_until = cljs.core.concat.call(null,fif.utils.token.take_to_toke
 var recent_begin_while = cljs.core.concat.call(null,fif.utils.token.take_to_token.call(null,flags,fif.stdlib.cond_loop.begin_while_mode_flag),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [fif.stdlib.cond_loop.begin_while_mode_flag], null));
 var recent_loop = cljs.core.concat.call(null,fif.utils.token.take_to_token.call(null,flags,fif.stdlib.cond_loop.loop_mode_flag),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [fif.stdlib.cond_loop.loop_mode_flag], null));
 var recent_listing = cljs.core.first.call(null,cljs.core.sort_by.call(null,cljs.core.count,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [recent_begin_until,recent_begin_while,recent_loop], null)));
-var leave_loop_tag = (function (){var pred__32715 = cljs.core._EQ_;
-var expr__32716 = cljs.core.last.call(null,recent_listing);
-if(cljs.core.truth_(pred__32715.call(null,fif.stdlib.cond_loop.loop_mode_flag,expr__32716))){
+var leave_loop_tag = (function (){var pred__38486 = cljs.core._EQ_;
+var expr__38487 = cljs.core.last.call(null,recent_listing);
+if(cljs.core.truth_(pred__38486.call(null,fif.stdlib.cond_loop.loop_mode_flag,expr__38487))){
 return fif.stdlib.cond_loop.loop_leave_mode_flag;
 } else {
-if(cljs.core.truth_(pred__32715.call(null,fif.stdlib.cond_loop.begin_until_mode_flag,expr__32716))){
+if(cljs.core.truth_(pred__38486.call(null,fif.stdlib.cond_loop.begin_until_mode_flag,expr__38487))){
 return fif.stdlib.cond_loop.begin_until_leave_mode_flag;
 } else {
-if(cljs.core.truth_(pred__32715.call(null,fif.stdlib.cond_loop.begin_while_mode_flag,expr__32716))){
+if(cljs.core.truth_(pred__38486.call(null,fif.stdlib.cond_loop.begin_while_mode_flag,expr__38487))){
 return fif.stdlib.cond_loop.begin_while_leave_mode_flag;
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__32716)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__38487)].join('')));
 }
 }
 }

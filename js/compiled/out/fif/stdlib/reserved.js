@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('fif.stdlib.reserved');
 goog.require('cljs.core');
 fif.stdlib.reserved.function_begin_definition_word = new cljs.core.Symbol(null,"fn","fn",465265323,null);

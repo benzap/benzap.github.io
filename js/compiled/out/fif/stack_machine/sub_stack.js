@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('fif.stack_machine.sub_stack');
 goog.require('cljs.core');
 fif.stack_machine.sub_stack.create_sub_stack = (function fif$stack_machine$sub_stack$create_sub_stack(coll){

@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('fif.stack_machine.error_handling');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -8,8 +8,8 @@ fif.stack_machine.error_handling.error_symbol = new cljs.core.Symbol(null,"ERR##
  * Creates a new error object
  */
 fif.stack_machine.error_handling.new_error_object = (function fif$stack_machine$error_handling$new_error_object(var_args){
-var G__31879 = arguments.length;
-switch (G__31879) {
+var G__35279 = arguments.length;
+switch (G__35279) {
 case 2:
 return fif.stack_machine.error_handling.new_error_object.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -41,8 +41,8 @@ return cljs.core._EQ_.call(null,cljs.core.first.call(null,obj),fif.stack_machine
  * Creates an error object for stack errors.
  */
 fif.stack_machine.error_handling.stack_error = (function fif$stack_machine$error_handling$stack_error(var_args){
-var G__31882 = arguments.length;
-switch (G__31882) {
+var G__35282 = arguments.length;
+switch (G__35282) {
 case 3:
 return fif.stack_machine.error_handling.stack_error.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -78,8 +78,8 @@ return ((fif.stack_machine.error_handling.error_object_QMARK_.call(null,obj)) &&
  * Creates an error object for system errors.
  */
 fif.stack_machine.error_handling.system_error = (function fif$stack_machine$error_handling$system_error(var_args){
-var G__31885 = arguments.length;
-switch (G__31885) {
+var G__35285 = arguments.length;
+switch (G__35285) {
 case 4:
 return fif.stack_machine.error_handling.system_error.cljs$core$IFn$_invoke$arity$4((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]));
 

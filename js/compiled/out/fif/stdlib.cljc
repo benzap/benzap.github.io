@@ -19,7 +19,8 @@
    [fif.stdlib.reader :refer [import-stdlib-reader]]
    [fif.stdlib.type-checking :refer [import-stdlib-type-checking]]
    [fif.stdlib.piecewise :refer [import-stdlib-piecewise]]
-   [fif.stdlib.help :refer [import-stdlib-help]]))
+   [fif.stdlib.help :refer [import-stdlib-help]]
+   [fif.stdlib.destructuring :refer [import-stdlib-destructuring]]))
 
 
 (defn import-stdlib [sm]
@@ -36,12 +37,13 @@
       import-stdlib-collection-ops
       import-stdlib-functional-ops
       import-stdlib-realize-mode
-      ;;import-stdlib-realize-multi-mode
+      import-stdlib-realize-multi-mode
       import-stdlib-stack-tools
       import-stdlib-repl
       import-stdlib-reader
       import-stdlib-type-checking
       import-stdlib-piecewise
-      import-stdlib-help))
+      import-stdlib-help
+      import-stdlib-destructuring))
 
 

@@ -32,33 +32,40 @@
 (defmulti realize-mode mode/mode-dispatch-fn)
 
 
+(defn prepare-map-collection [m]
+  (reduce
+   (fn [xs [k v]]
+     (let [bform (cond-> '()
+                   true     (concat [k])
+                   (seq? k) (concat ['apply])
+                   true     (concat [v])
+                   (seq? v) (concat ['apply])
+                   true     vec)]
+       (concat xs [bform arg-realize-token])))
+   []
+   m))
+
+
 (defmethod realize-mode
   {:op ::? :op-state ::init}
   [sm]
   (let [[collection] (-> sm stack-machine/get-stack)
         coll-type (empty collection)
         collection
-        (if (map? collection)
-          (reduce
-           (fn [xs [k v]]
-             (let [bform (cond-> '()
-                           true                      (concat [k])
-                           (or (seq? k) (symbol? k)) (concat ['apply])
-                           true                      (concat [v])
-                           (or (seq? v) (symbol? v)) (concat ['apply])
-                           true vec)]
-               (concat xs [bform arg-realize-token])))
-           []
-           collection)
+        (if (map? collection) 
+          (prepare-map-collection collection)
           collection)]
-    
-    (-> sm
-        (stack-machine.stash/update-stash assoc ::collection-type coll-type)
-        (mode/update-state assoc :op-state ::collect)
-        stack-machine/dequeue-code
-        stack-machine/pop-stack
-        (stack-machine/push-stack arg-realize-start-token)
-        (stack-machine/update-code #(concat %2 %3 %1) collection [arg-realize-finish-token]))))
+    (if (coll? collection)
+      (-> sm
+          (stack-machine.stash/update-stash assoc ::collection-type coll-type)
+          (mode/update-state assoc :op-state ::collect)
+          stack-machine/dequeue-code
+          stack-machine/pop-stack
+          (stack-machine/push-stack arg-realize-start-token)
+          (stack-machine/update-code #(concat %2 %3 %1) collection [arg-realize-finish-token]))
+      (-> sm
+          exit-realize-mode
+          stack-machine/dequeue-code))))
 
 
 (defmethod realize-mode

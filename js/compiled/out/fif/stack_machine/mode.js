@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('fif.stack_machine.mode');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -9,8 +9,8 @@ var init_stash = cljs.core.assoc.call(null,fif.stack_machine.mode.default_mode_s
 return fif.stack_machine.stash.new_stash.call(null,sm,init_stash);
 });
 fif.stack_machine.mode.enter_mode = (function fif$stack_machine$mode$enter_mode(var_args){
-var G__32143 = arguments.length;
-switch (G__32143) {
+var G__38348 = arguments.length;
+switch (G__38348) {
 case 3:
 return fif.stack_machine.mode.enter_mode.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -42,23 +42,23 @@ fif.stack_machine.mode.set_state = (function fif$stack_machine$mode$set_state(sm
 return fif.stack_machine.stash.update_stash.call(null,cljs.core.assoc,new cljs.core.Keyword("fif.stack-machine.mode","state","fif.stack-machine.mode/state",1562737223),state);
 });
 fif.stack_machine.mode.update_state = (function fif$stack_machine$mode$update_state(var_args){
-var args__4647__auto__ = [];
-var len__4641__auto___32148 = arguments.length;
-var i__4642__auto___32149 = (0);
+var args__4736__auto__ = [];
+var len__4730__auto___38353 = arguments.length;
+var i__4731__auto___38354 = (0);
 while(true){
-if((i__4642__auto___32149 < len__4641__auto___32148)){
-args__4647__auto__.push((arguments[i__4642__auto___32149]));
+if((i__4731__auto___38354 < len__4730__auto___38353)){
+args__4736__auto__.push((arguments[i__4731__auto___38354]));
 
-var G__32150 = (i__4642__auto___32149 + (1));
-i__4642__auto___32149 = G__32150;
+var G__38355 = (i__4731__auto___38354 + (1));
+i__4731__auto___38354 = G__38355;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__4648__auto__ = ((((2) < args__4647__auto__.length))?(new cljs.core.IndexedSeq(args__4647__auto__.slice((2)),(0),null)):null);
-return fif.stack_machine.mode.update_state.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4648__auto__);
+var argseq__4737__auto__ = ((((2) < args__4736__auto__.length))?(new cljs.core.IndexedSeq(args__4736__auto__.slice((2)),(0),null)):null);
+return fif.stack_machine.mode.update_state.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),(arguments[(1)]),argseq__4737__auto__);
 });
 
 fif.stack_machine.mode.update_state.cljs$core$IFn$_invoke$arity$variadic = (function (sm,f,args){
@@ -68,13 +68,13 @@ return cljs.core.apply.call(null,fif.stack_machine.stash.update_stash,sm,cljs.co
 fif.stack_machine.mode.update_state.cljs$lang$maxFixedArity = (2);
 
 /** @this {Function} */
-fif.stack_machine.mode.update_state.cljs$lang$applyTo = (function (seq32145){
-var G__32146 = cljs.core.first.call(null,seq32145);
-var seq32145__$1 = cljs.core.next.call(null,seq32145);
-var G__32147 = cljs.core.first.call(null,seq32145__$1);
-var seq32145__$2 = cljs.core.next.call(null,seq32145__$1);
-var self__4628__auto__ = this;
-return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__32146,G__32147,seq32145__$2);
+fif.stack_machine.mode.update_state.cljs$lang$applyTo = (function (seq38350){
+var G__38351 = cljs.core.first.call(null,seq38350);
+var seq38350__$1 = cljs.core.next.call(null,seq38350);
+var G__38352 = cljs.core.first.call(null,seq38350__$1);
+var seq38350__$2 = cljs.core.next.call(null,seq38350__$1);
+var self__4717__auto__ = this;
+return self__4717__auto__.cljs$core$IFn$_invoke$arity$variadic(G__38351,G__38352,seq38350__$2);
 });
 
 fif.stack_machine.mode.update_stash = fif.stack_machine.stash.update_stash;

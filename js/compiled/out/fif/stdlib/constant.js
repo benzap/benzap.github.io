@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('fif.stdlib.constant');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -20,8 +20,8 @@ return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.push_stack.cal
  */
 fif.stdlib.constant.constant_mode = (function fif$stdlib$constant$constant_mode(sm){
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
-var vec__32839 = fif.stack_machine.get_stack.call(null,sm);
-var cval = cljs.core.nth.call(null,vec__32839,(0),null);
+var vec__38548 = fif.stack_machine.get_stack.call(null,sm);
+var cval = cljs.core.nth.call(null,vec__38548,(0),null);
 return fif.stack_machine.dequeue_code.call(null,fif.stack_machine.pop_flag.call(null,fif.stack_machine.set_word.call(null,fif.stack_machine.pop_stack.call(null,sm),arg,fif.stdlib.constant.wrap_word_constant.call(null,cval))));
 });
 /**

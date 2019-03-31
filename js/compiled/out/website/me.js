@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('website.me');
 goog.require('cljs.core');
 website.me.quote = "I am a software developer who is passionate about his work.";

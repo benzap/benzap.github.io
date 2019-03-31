@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.439 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('fif.stdlib.realizer');
 goog.require('cljs.core');
 goog.require('fif.stack_machine');
@@ -20,41 +20,46 @@ return fif.stack_machine.mode.exit_mode.call(null,sm);
 });
 if((typeof fif !== 'undefined') && (typeof fif.stdlib !== 'undefined') && (typeof fif.stdlib.realizer !== 'undefined') && (typeof fif.stdlib.realizer.realize_mode !== 'undefined')){
 } else {
-fif.stdlib.realizer.realize_mode = (function (){var method_table__4524__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var prefer_table__4525__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var method_cache__4526__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var cached_hierarchy__4527__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__4528__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
-return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"fif.stdlib.realizer","realize-mode"),fif.stack_machine.mode.mode_dispatch_fn,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__4528__auto__,method_table__4524__auto__,prefer_table__4525__auto__,method_cache__4526__auto__,cached_hierarchy__4527__auto__));
+fif.stdlib.realizer.realize_mode = (function (){var method_table__4613__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var prefer_table__4614__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var method_cache__4615__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var cached_hierarchy__4616__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
+var hierarchy__4617__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
+return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"fif.stdlib.realizer","realize-mode"),fif.stack_machine.mode.mode_dispatch_fn,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__4617__auto__,method_table__4613__auto__,prefer_table__4614__auto__,method_cache__4615__auto__,cached_hierarchy__4616__auto__));
 })();
 }
-cljs.core._add_method.call(null,fif.stdlib.realizer.realize_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.realizer","?","fif.stdlib.realizer/?",-246752758),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","init","fif.stdlib.realizer/init",-395491993)], null),(function (sm){
-var vec__32489 = fif.stack_machine.get_stack.call(null,sm);
-var collection = cljs.core.nth.call(null,vec__32489,(0),null);
-var coll_type = cljs.core.empty.call(null,collection);
-var collection__$1 = ((cljs.core.map_QMARK_.call(null,collection))?cljs.core.reduce.call(null,((function (vec__32489,collection,coll_type){
-return (function (xs,p__32492){
-var vec__32493 = p__32492;
-var k = cljs.core.nth.call(null,vec__32493,(0),null);
-var v = cljs.core.nth.call(null,vec__32493,(1),null);
-var bform = (function (){var G__32496 = cljs.core.List.EMPTY;
-var G__32496__$1 = cljs.core.concat.call(null,G__32496,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [k], null))
+fif.stdlib.realizer.prepare_map_collection = (function fif$stdlib$realizer$prepare_map_collection(m){
+return cljs.core.reduce.call(null,(function (xs,p__38358){
+var vec__38359 = p__38358;
+var k = cljs.core.nth.call(null,vec__38359,(0),null);
+var v = cljs.core.nth.call(null,vec__38359,(1),null);
+var bform = (function (){var G__38362 = cljs.core.List.EMPTY;
+var G__38362__$1 = cljs.core.concat.call(null,G__38362,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [k], null))
 ;
-var G__32496__$2 = ((((cljs.core.seq_QMARK_.call(null,k)) || ((k instanceof cljs.core.Symbol))))?cljs.core.concat.call(null,G__32496__$1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"apply","apply",-1334050276,null)], null)):G__32496__$1);
-var G__32496__$3 = cljs.core.concat.call(null,G__32496__$2,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [v], null))
+var G__38362__$2 = ((cljs.core.seq_QMARK_.call(null,k))?cljs.core.concat.call(null,G__38362__$1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"apply","apply",-1334050276,null)], null)):G__38362__$1);
+var G__38362__$3 = cljs.core.concat.call(null,G__38362__$2,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [v], null))
 ;
-var G__32496__$4 = ((((cljs.core.seq_QMARK_.call(null,v)) || ((v instanceof cljs.core.Symbol))))?cljs.core.concat.call(null,G__32496__$3,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"apply","apply",-1334050276,null)], null)):G__32496__$3);
-return cljs.core.vec.call(null,G__32496__$4);
+var G__38362__$4 = ((cljs.core.seq_QMARK_.call(null,v))?cljs.core.concat.call(null,G__38362__$3,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"apply","apply",-1334050276,null)], null)):G__38362__$3);
+return cljs.core.vec.call(null,G__38362__$4);
 
 })();
 return cljs.core.concat.call(null,xs,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [bform,fif.stdlib.realizer.arg_realize_token], null));
-});})(vec__32489,collection,coll_type))
-,cljs.core.PersistentVector.EMPTY,collection):collection);
-return fif.stack_machine.update_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.realizer","collection-type","fif.stdlib.realizer/collection-type",1108804159),coll_type),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","collect","fif.stdlib.realizer/collect",-1810320850)))),fif.stdlib.realizer.arg_realize_start_token),((function (vec__32489,collection,coll_type,collection__$1){
-return (function (p1__32488_SHARP_,p2__32486_SHARP_,p3__32487_SHARP_){
-return cljs.core.concat.call(null,p2__32486_SHARP_,p3__32487_SHARP_,p1__32488_SHARP_);
-});})(vec__32489,collection,coll_type,collection__$1))
+}),cljs.core.PersistentVector.EMPTY,m);
+});
+cljs.core._add_method.call(null,fif.stdlib.realizer.realize_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.realizer","?","fif.stdlib.realizer/?",-246752758),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","init","fif.stdlib.realizer/init",-395491993)], null),(function (sm){
+var vec__38366 = fif.stack_machine.get_stack.call(null,sm);
+var collection = cljs.core.nth.call(null,vec__38366,(0),null);
+var coll_type = cljs.core.empty.call(null,collection);
+var collection__$1 = ((cljs.core.map_QMARK_.call(null,collection))?fif.stdlib.realizer.prepare_map_collection.call(null,collection):collection);
+if(cljs.core.coll_QMARK_.call(null,collection__$1)){
+return fif.stack_machine.update_code.call(null,fif.stack_machine.push_stack.call(null,fif.stack_machine.pop_stack.call(null,fif.stack_machine.dequeue_code.call(null,fif.stack_machine.mode.update_state.call(null,fif.stack_machine.stash.update_stash.call(null,sm,cljs.core.assoc,new cljs.core.Keyword("fif.stdlib.realizer","collection-type","fif.stdlib.realizer/collection-type",1108804159),coll_type),cljs.core.assoc,new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","collect","fif.stdlib.realizer/collect",-1810320850)))),fif.stdlib.realizer.arg_realize_start_token),((function (vec__38366,collection,coll_type,collection__$1){
+return (function (p1__38365_SHARP_,p2__38363_SHARP_,p3__38364_SHARP_){
+return cljs.core.concat.call(null,p2__38363_SHARP_,p3__38364_SHARP_,p1__38365_SHARP_);
+});})(vec__38366,collection,coll_type,collection__$1))
 ,collection__$1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [fif.stdlib.realizer.arg_realize_finish_token], null));
+} else {
+return fif.stack_machine.dequeue_code.call(null,fif.stdlib.realizer.exit_realize_mode.call(null,sm));
+}
 }));
 cljs.core._add_method.call(null,fif.stdlib.realizer.realize_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.realizer","?","fif.stdlib.realizer/?",-246752758),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","collect","fif.stdlib.realizer/collect",-1810320850)], null),(function (sm){
 var arg = cljs.core.first.call(null,fif.stack_machine.get_code.call(null,sm));
@@ -66,8 +71,8 @@ return fif.stack_machine.processor.process_arg.call(null,sm);
 }
 }));
 fif.stdlib.realizer.fix_map_key_pairs = (function fif$stdlib$realizer$fix_map_key_pairs(kp){
-var G__32497 = cljs.core.count.call(null,kp);
-switch (G__32497) {
+var G__38369 = cljs.core.count.call(null,kp);
+switch (G__38369) {
 case (0):
 return null;
 
@@ -87,9 +92,9 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 });
 cljs.core._add_method.call(null,fif.stdlib.realizer.realize_mode,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword("fif.stdlib.realizer","?","fif.stdlib.realizer/?",-246752758),new cljs.core.Keyword(null,"op-state","op-state",1819264218),new cljs.core.Keyword("fif.stdlib.realizer","finish","fif.stdlib.realizer/finish",592507797)], null),(function (sm){
 var coll_type = new cljs.core.Keyword("fif.stdlib.realizer","collection-type","fif.stdlib.realizer/collection-type",1108804159).cljs$core$IFn$_invoke$arity$1(fif.stack_machine.stash.peek_stash.call(null,sm));
-var vec__32499 = fif.utils.token.split_at_token.call(null,fif.stack_machine.get_stack.call(null,sm),fif.stdlib.realizer.arg_realize_start_token);
-var realized_collection = cljs.core.nth.call(null,vec__32499,(0),null);
-var new_stack = cljs.core.nth.call(null,vec__32499,(1),null);
+var vec__38371 = fif.utils.token.split_at_token.call(null,fif.stack_machine.get_stack.call(null,sm),fif.stdlib.realizer.arg_realize_start_token);
+var realized_collection = cljs.core.nth.call(null,vec__38371,(0),null);
+var new_stack = cljs.core.nth.call(null,vec__38371,(1),null);
 var realized_collection__$1 = ((cljs.core.map_QMARK_.call(null,coll_type))?cljs.core.keep.call(null,fif.stdlib.realizer.fix_map_key_pairs,realized_collection):realized_collection);
 var realized_collection__$2 = cljs.core.into.call(null,coll_type,cljs.core.reverse.call(null,realized_collection__$1));
 var realized_collection__$3 = ((cljs.core.seq_QMARK_.call(null,realized_collection__$2))?cljs.core.reverse.call(null,realized_collection__$2):realized_collection__$2);
